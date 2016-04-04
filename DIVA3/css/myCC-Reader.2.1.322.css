@@ -1,0 +1,1897 @@
+html {
+	font: 11pt Arial, Helvetica, sans-serif;
+}
+/* kendo styles */
+.k-grouping-row  td{
+  border-top: 1px solid #C5C5C5;
+}
+.k-button {
+	min-width: 30px;
+}
+
+/* -------------- */
+
+#ccTopBanner {
+	border-bottom: 1px solid #888;
+}
+
+.HomeMenu {
+	display: inline-block;
+	padding-left: 190px;
+}
+
+.ccDivaBanner {
+    background-image: url(images/DivaLogo2.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-color: #FFF;
+    background-size: contain;
+    height: 90px;
+    border-bottom: 1px solid #EEE;
+    vertical-align: top;
+    position: relative;
+}
+
+.ccAccountLogo {
+	background-position: left center;
+	background-repeat: no-repeat;	
+	background-size: contain;
+	height: 65px;
+	width: 155px;
+    position: absolute;
+    top: 10px;
+    left: 10px;	
+	font-size:16pt;	
+	color: #999;
+    z-index: 100;
+}
+
+.ccLoginHeader {
+	padding: 5px 10px 10px 10px;	
+	font-size:12px;	
+	color: #666;
+}
+
+.ccLoginLabel {
+	padding: 10px;	
+	font-size: 16px;	
+	width: 120px;
+	color: #666;
+}
+
+.ccLoginField, .ccLoginField a {
+	font-size:12px;	
+	color: #666;
+    height: 30px;
+}
+
+.ccLoginButtons {
+	text-align: center;
+	padding: 10px;
+}
+
+a#ccForgotPassword {
+	font-size: 9pt;
+}
+ 
+.ccDialog {
+	margin-left: 15px;
+	width: 95%;
+}
+
+.ccDialog table{
+	width: 100%;
+	/*margin: 0px auto;*/
+}
+.ccDialogTitle {
+	padding:  20px 5px 2px 0px;		
+	font-size:14px;	
+	border-bottom: 1px solid #AAA;
+	color: #666;
+	font-weight: bold;
+}
+.ccDialogHeader {
+	padding: 5px 0px;	
+	font-size:12px;	
+	color: #666;
+	width: 160px;
+}
+
+.ccDialogField {
+	padding: 5px 0px;	
+	font-size:12px;	
+	color: #33;
+}
+
+.ccDialogField  input, .ccDialogField  textarea{
+	font-size:12px;	
+	color: #333;
+}
+
+.ccDialogOptions {
+	padding: 5px 10px 10px 5px;
+	text-align: center;
+}
+.ccDownloadManagerButtons {
+    padding: 5px 5px 10px 5px;
+	text-align: right;
+}
+
+.ccDoAssignTo {
+	width: 300px;
+}
+.ccCheckSavedBasketButton {
+	width: 350px;
+}
+.ccAddToExistingBasket {
+	width: 400px;
+}
+
+#myCCReader {
+	-moz-box-sizing:border-box;box-sizing:border-box;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+}
+
+#myCCReaderContent {
+	-moz-box-sizing:border-box;box-sizing:border-box;
+	max-width: 1028px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin:0px auto;
+	/*
+        border-left: 1px solid #EEEEEE;
+	    border-right: 1px solid #EEEEEE;
+    */
+}
+
+#myCCReader table {
+	border-collapse:collapse;
+}
+
+#myCCReader h3.k-header
+{
+	margin: 0 0 5 0px;
+	/*margin: 1.4em 0 1em;*/
+	padding: .3em 1em;
+	font-size: 1.2em;
+	text-align: right;
+	/*border-radius: 2px;*/
+}
+
+#ccBtnGallery {
+	display:inline-block;
+	background:url(images/gallery_small.gif)  center right no-repeat;
+	/*width: 15px;*/
+	-moz-user-select: none;
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+	margin: 0;
+	outline: 0 none;
+	padding: 10px 11px; 
+}
+
+#ccBtnGallery:hover {
+	background-image:url(images/gallery_small_over.gif);
+}
+
+#ccBtnList {
+	display:inline-block;
+	background:url(images/list_small.gif)  center right no-repeat;
+	/*width: 15px;*/
+	-moz-user-select: none;
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+	margin: 0;
+	outline: 0 none;
+	padding: 10px 11px;  
+}
+
+#ccBtnList:hover {
+	background-image:url(images/list_small_over.gif);
+}
+.ccPushRight {
+	background:url(images/sortright_sel.gif) center center no-repeat;
+	cursor: pointer;
+	/*margin: 0;*/
+	outline: 0 none;
+	/*padding: 10px 3px;  */
+	width: 25px;
+	height: 16px;
+}
+
+.ccPushLeft {
+	background:url(images/sortleft_sel.gif) center center no-repeat;
+	cursor: pointer;
+	/*margin: 0;*/
+	outline: 0 none;
+	/*padding: 10px 3px;  */
+	width: 25px;
+	height: 16px;
+}
+#ccTopBanner {
+	border-bottom: 1px solid #888;
+}
+
+.ccSortimentsBrowser {
+	border: 0px;
+	height: 1400px;
+	width: 100%;
+	margin-top: 10px;
+}
+
+#ccTopMenu {
+	vertical-align: top;
+	position: absolute;
+	top:0px;
+	left: 190px;
+	z-index:1000;
+	list-style: none outside none;
+	padding: 0;
+	display: inline-block;
+	margin: 0;
+    border-color: transparent;
+}
+
+#ccNavMenu {
+	-moz-box-sizing:border-box;box-sizing:border-box;
+	width: 185px;
+	vertical-align: top;
+	font-size: 11pt;
+}
+
+#ccNavMenu .k-dropdown {
+	width: 160px;
+}
+
+#ccNavMenu .k-button  {
+	width: 144px;
+}
+
+.ccNavMenuItem {
+	/*padding-left: 10px;*/
+	padding: 5px 5px 10px 5px;
+	color: #666666;
+	text-align: center;
+}
+
+
+.ccAddressInfo {
+	text-align: left;
+	padding-left: 15px;
+	font-size: 12px;
+}
+#ccCatalogMenu {
+	padding-top: 15px;
+}
+
+#ccCatalogLogo {
+	height: 120px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.ccShowPersonalAccountsOnly {
+	text-align: left;
+	padding: 5px;
+}
+
+.ccAccountButtons {
+	clear: both;
+	padding: 10px;
+}
+
+.ccToolbarTitle {
+	line-height: 31px;
+	padding-left: 10px;	
+	float: left;
+}
+.ccToolbarProperties {
+	font-size: 10pt;
+	float: left;
+	line-height: 28px;
+	padding: 0 180px 0 200px;
+	vertical-align: middle;
+	position: absolute;
+	margin-top: -2px;
+}
+.ccToolbarProperties > div{
+	display: inline-block;
+  vertical-align: middle;
+	line-height: 12px;
+}
+.ccToolbarProperties span {
+	float:left;
+}
+
+.ccToolbarPropertiesOK {
+	background-image: url("images/PropertyOK.gif");
+	background-repeat: no-repeat;
+	cursor: pointer;    
+	line-height: 18px;
+  padding: 0 14px 0 22px;
+}
+
+.ccToolbarPropertiesSelect {
+	background-image: url("images/PropertySelect.gif");
+	background-repeat: no-repeat;
+	cursor: pointer;
+	line-height: 18px;
+  padding: 0 14px 0 22px;
+}	
+
+.ccToolbarConfirm {
+	position: absolute;
+	right: 10px;
+	top: 5px;
+}
+.ccModelInfo {
+	font-weight: bold;
+}
+.ccModelDesc {
+	font-size: 9pt;
+}
+
+.ccModelGalTitle {
+	font-size: 11pt;
+	font-weight: bold;
+	color: #333333;
+	clear: both;
+	padding: 5px 10px 5px 10px;
+}
+
+.ccModelGalNavi{
+	clear: both;
+	padding: 15px 10px 5px 10px;
+}
+
+
+#ccCatalogFrame {
+	-moz-box-sizing:border-box;box-sizing:border-box;
+	top:0px;
+	left:0px;
+	width: 100%;
+	/*height:700px;*/
+	position: relative;
+/*  border: 1px solid #ff0000;   */
+}
+
+#ccLeftContent {
+	-moz-box-sizing:border-box;box-sizing:border-box;
+	vertical-align: top;
+  /*border: 1px solid #ff0000;   */
+	top: 0px;
+	left: 0px;
+	/*height: 100%;*/
+	width: 300px;
+	padding-left: 10px;
+	padding-top: 15px;
+	float: left;
+}
+
+#ccRightContent {
+	-moz-box-sizing:border-box;box-sizing:border-box;
+	top: 0px;
+	right: 0px;
+	width: 320px;
+	padding-left:10px;
+	vertical-align: top;
+  border-left: 25px solid #EEEEEE;
+	height: 100%;
+	z-index: 2;
+	background-color: #DDDDDD;
+	position: relative;
+	float: right;
+	min-height: 600px;
+}
+	
+.ccExpandToLeft {
+	-moz-box-sizing:border-box;box-sizing:border-box;
+	top: 14px;
+	right: 15px;
+	position: absolute;
+}
+
+.ccExpandToRight {
+	-moz-box-sizing:border-box;box-sizing:border-box;
+	top: 14px;
+	left: -35px;
+	position: absolute;
+}
+
+#ccBottomPanel {
+	-moz-box-sizing:border-box;box-sizing:border-box;
+	clear: both;
+	height: 1px; 
+	/*overflow: hidden;*/
+	/*padding-top: 8px;*/
+}
+
+#ccPager {
+	line-height: 1.8em;
+  padding: 0.4em 0.6em;
+	background-image: url("textures/highlight.png");
+	border-color: #EEEEEE;
+	background-position: 0 center;
+  background-repeat: repeat-x;
+}
+
+#ccTopPanel {
+	-moz-box-sizing:border-box;box-sizing:border-box;
+	clear: both;
+	/*border-top: 1px solid #EEE;*/
+	display: none;
+	width: 100%;
+}
+
+.ccDivaBanner #ccTabs {
+	display: none;
+	position: absolute;
+	left: 190px;
+	bottom: 0px;
+    z-index: 1000;
+}
+
+.ccTopModelName {
+	left: 0px;
+	top: 90px;
+    padding: 8px;
+    z-index: 1000;
+    font-size: 18pt;
+    color: #999;
+    position: absolute;
+    background-color: #CCC;
+}
+
+.ccTouchInfo {
+  z-index: 200000;
+  position: absolute;
+  top: 320px;
+  width: 400px;  
+  left: 120px;
+  font-size: 24pt;
+  background-color: #CCF;
+  padding: 10px;
+}
+
+.ccTouchInfoMoreModels {
+  z-index: 200000;
+  position: absolute;
+  top: 20px;
+  left: 150px;
+  font-size: 24pt;
+  background-color: #CCF;
+  padding: 10px;
+}
+
+.ccTouchInfoColorsim {
+  z-index: 200000;
+  position: absolute;
+  top: 220px;
+  left: 450px;
+  font-size: 24pt;
+  background-color: #CCF;
+  padding: 10px;
+}
+
+.ccTabsKendoMenuPOS > ul {
+    background-image: none !important;
+    background-color: transparent !important;
+    border-width: 0px !important;
+}
+
+.ccTabsKendoMenuPOI ul {
+    font-size: 13pt;
+}
+ 
+.ccTabsMenu {
+    float: left;
+    list-style: none outside none;
+}
+
+.ccActive {
+	color: #F35800 !important;
+}
+ 
+ .ccTabsMenu  li {
+  float: left;
+	border-left: 2px solid #999;
+ }
+ 
+ .ccTabsMenu  li:first-child {
+  float: left;
+	border-left: 0px;
+ }
+ 
+ .ccTabsMenu  span{
+	font-size: 13pt;
+	/*font-weight: bold;*/
+	/*letter-spacing: 0em;*/
+	/*line-height: 16px;*/
+	padding: 0 10px;
+	text-decoration: none;
+	/*text-transform: uppercase;*/
+	cursor: pointer;
+	color: #666;
+}
+
+#ccTopMenu {
+	list-style: none outside none;
+	padding: 0;
+	display: inline-block;
+	margin: 0;
+}
+
+#ccTopMenu li span.disabled {
+	cursor: default;
+	color: #CCC;	
+}
+#ccTopMenu li span.disabled:hover {
+	background: white;
+}
+
+#ccTabsContent > div {
+	width: 100%;
+	height: 100%;
+}
+
+.ccTabsContent {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+.ccTabsContent > div {
+	width: 100%;
+	height: 100%;
+}
+
+
+/*
+#ccAccountsContent,#ccCatalogsContent, #ccCatalogInfoContent, #ccColorsimContent, #ccPlannerContent, #ccArticlesContent, #ccOrdersContent, #ccArchivContent  {
+	width: 100%;
+	-moz-box-sizing:border-box;box-sizing:border-box;
+	display: block;
+	clear: both;
+	min-height: 650px;
+	position: relative;
+}
+*/
+
+.ccLeftToolbarButtons {
+	position: absolute;
+    padding: 2px 0px 0px 6px;
+}
+
+
+#ccCatalogInfoContentToolbar {
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+
+#ccMainPanel {
+	-moz-box-sizing:border-box;box-sizing:border-box;
+	/*border: 1px solid #EEEEEE;*/
+	display: block;
+	clear: both;
+	min-height: 450px;
+	position: relative;
+	padding-bottom: 20px;
+	font-size: 10pt;
+	color: #333;
+	width: 1020px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#ccRoomPlanner {
+	-moz-box-sizing:border-box;box-sizing:border-box;
+	/*border: 1px solid #EEEEEE;*/
+	display: none;
+	clear: both;
+	min-height: 450px;
+	position: relative;
+	padding-bottom: 20px;
+	font-size: 10pt;
+	color: #333;
+    overflow: hidden;
+}
+
+/* von myCC-Common..
+#ccTabsContent {
+    height: auto !important;
+    width: 100%;
+}
+
+    */
+.ccView {
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	height: 100%;
+    width: 100%;
+}
+/*
+#ccCatalogsContent .ccView {
+    position: absolute;
+    left: 0px;
+    top: 44px;
+}
+    */
+@media screen {
+	.ccListView {
+		display: block;
+		clear: both;
+		overflow-y: auto; 
+		overflow-x: hidden !important;
+		border: 0px;
+		min-height: 400px;
+	}
+}
+
+@media print {
+	.ccListView {
+		display: inline;
+		clear: both;
+		overflow-y: auto; 
+		overflow-x: hidden !important;
+		border: 0px;
+	}
+}
+
+.ccListView table, .ccListView td {
+	/*font: 9pt Arial, Helvetica, sans-serif;
+	color: #666666;*/
+	vertical-align: top;
+}
+
+.ccGalleryViewTitle {
+	font-size: 14pt; 
+	font-weight: bold; 
+	padding: 15px 15px 0px 15px;
+}
+
+.ccGalleryViewContent {
+    padding: 15px 15px 0px 15px;
+}
+
+.ccGalleryView {
+	display: inline-block;
+	clear: both;
+	/*overflow: auto; 
+	height: 100%;*/
+	border: none;
+	padding: 15px 0px 25px 0px;
+	min-height: 400px;
+    width: 100%;
+}
+
+#ccCatalogsContent .ccGalleryView {
+	width: auto !important;
+    padding-left: 110px;
+}
+
+.ccGroups { 
+	width: 100%;
+	clear: both;
+	padding-top: 10px;
+	overflow: hidden;
+}
+
+.ccCatalogGalleryGroup {
+	clear: both;
+	color: #666666;
+	position: relative;
+    left: -105px;
+    height: 1px;
+    text-align: center;
+    width: 105px;
+    padding-top: 5px;
+}
+
+.ccCatalogGalleryGroup .ccTitle {
+    width: 100px;
+    height: 110px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+    background-position-x: center;
+    margin: 5px;
+}
+
+.ccCatalogGalleryGroup .ccTitle span {
+    position: absolute;
+    top: 118px;
+    left: 0px;
+    text-align: center;
+    color: #BBB;
+    width: 100%;
+}
+
+.ccCatalogGalleryGroup .ccCollection {
+    color: #AAA;
+	font-size: 9pt;
+	text-align: right;
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	
+}
+
+.ccCatalogGalleryGroup .ccGroupName {
+    font-size: 10pt;
+	text-align: right;
+	position: absolute;
+	width: 100%;
+	left: 0px;
+}
+
+
+#ccArticlesContent .ccGalleryView {
+	width: auto !important;
+    padding-left: 150px;
+}
+
+.ccArticleGalleryGroup {
+    clear: both;
+	color: #666666;
+	position: relative;
+    left: -150px;
+    height: 1px;
+    text-align: center;
+    width: 150px;
+    padding-top: 5px;
+}
+
+.ccArticleGalleryGroup .ccTitle span {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    text-align: right;
+    width: 100%;
+}
+
+.ccSimpleGalleryGroup {
+	clear: both;
+	color: #666666;
+	background-color: #EBEBEB;
+	border-color: #C5C5C5;
+	margin-bottom:10px;
+	padding: 0.4em 0.6em;
+    position: relative;
+}
+
+.ccSimpleGalleryGroupLeft {
+	clear: both;
+	color: #666666;
+	border-color: #C5C5C5;
+	padding: 5px 10px 5px 150px;
+	margin-bottom:10px;
+	position: relative;
+}
+
+.ccSimpleGalleryGroupLeft > span {
+	font-size: 10pt;
+	left: 0;
+	position: absolute;
+	text-align: right;
+	top: 10px;
+	width: 150px;
+}
+.ccSimpleGalleryGroupLeft .ccCollection {
+    color: #AAA;
+	font-size: 9pt;
+}
+
+
+.ccGalleryGroup {
+	display: block;
+	clear: both;
+	overflow: auto; 
+	color: #666666;
+	background-color: #EBEBEB;
+	border-color: #C5C5C5;
+	padding: 0.4em 0.6em;
+	/*font: 9pt Arial,Helvetica,sans-serif;*/
+}
+.ccGalleryGroup p{
+	margin-left: -0.6em;
+	padding: 0 0.6em;
+}
+
+.ccDivaPlannerTeaser {
+	background: transparent url('images/DivaPlanner.png') left top no-repeat; 
+	height: 40px;
+  margin-left: 15px;
+  padding-left: 210px;}
+
+.ccArticlelistText {
+	color: #666;
+	padding: 5px 10px 0px;		
+}	
+
+.ccArticlelistTitle {
+	float: left;
+	font-weight: bold;
+	padding-right: 10px;
+	padding-top: 4px;
+	text-align: right;
+	width: 165px;
+}	
+
+.ccFilterFunction {
+	color: #666;
+	padding: 5px 10px 0px;	
+}
+
+.ccArticleFilterFunction {
+    display: inline-block;
+	color: #666;
+	padding: 5px 20px;	
+}
+
+.ccArticleFilterFunction >div{
+    float: left;
+	width: 500px;
+	
+}
+
+.ccArticlesFilterToolbar {
+	display: inline-block;
+	padding: 0px 10px;
+	float: right;
+}
+
+#ccArticleFilter, #ccCatalogFilter {
+	width: 160px;
+}
+
+#ccArticlesConfig {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 0%;
+	width: 100%;
+}
+#ccArticlesConfig > div {
+    height: 100%;
+    width: 100%;
+}
+
+.ccGalleryGroupItems {
+	display: block;
+	clear: both;
+	overflow: auto; 
+	padding: 5px;
+}
+
+.ccBasketHeader {
+	position: relative; 
+	padding-top: 10px;
+	color: #666666;
+	font: 9pt Arial,Helvetica,sans-serif;
+	border-bottom: 1px solid #C5C5C5;
+	width: 100%;
+}
+
+.ccBasketHeaderTitle {
+	font-size: 14pt; 
+	font-weight: bold; 
+	padding-left: 10px;
+	line-height: 31px;
+	float: left;
+}
+
+.ccBasketHeaderBody {
+	padding:5px 5px 10px 10px;
+}
+
+.ccBasketToolbar {
+	/*position: relative;*/
+}
+
+.ccBasketHeaderButtons {
+	text-align: right; 	
+	position: absolute; 
+	padding: 5px 10px;
+	right: 0;
+	top: 0;
+}
+
+
+.ccBasketFooter {
+	padding: 8px;
+	display: inline-block;
+	width: 98%;
+	color: #666666;
+	font: 9pt Arial,Helvetica,sans-serif;
+	border-bottom: 1px solid #EEE;
+	
+}
+
+
+.ccBasketFooterPrice {
+	text-align: right; 	
+	font-size: 12pt; 
+	float: right;
+	padding-right: 130px;
+}
+
+.ccBasketFooterPrice > span {
+	padding-left: 20px;
+}
+
+.ccPrintBasketFooter {
+	position: relative; 
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #666666;
+	font: 9pt Arial,Helvetica,sans-serif;
+	border-top: 1px solid #C5C5C5;
+	border-bottom: 1px solid #C5C5C5;
+}
+
+.ccPrintBasketPriceInfo {
+	color: #666666;
+	font: 7pt Arial,Helvetica,sans-serif;
+	position: absolute;
+	bottom: 0px;
+	left: 10px;
+}
+
+.ccBasketFooterText {
+	font-size: 12pt; 
+	padding-left: 10px;
+	white-space: nowrap;
+	float: left;
+}
+
+.ccBasketFooterTitle {
+	font-size: 12pt; 
+	padding-left: 10px;
+	white-space: nowrap;
+	float: left;
+	font-weight: bold; 
+}
+
+
+.ccBold {
+    font-weight: bold; 
+}
+
+.ccSelected {
+	color: #F35800;
+}
+
+.ccPrintBasketFooterPrice {
+	text-align: right; 	
+	position: absolute; 
+	font-size: 12pt; 
+	font-weight: bold; 
+	right: 18px;
+	top: 10px;
+}
+
+.ccBasketSet, .ccBasketData {
+	position: relative; 
+	padding-top: 8px;
+	color: #666666;
+	font: 9pt Arial,Helvetica,sans-serif;
+}
+
+.ccBasketSetTitle, .ccBasketDataTitle {
+	font-size: 14pt; 
+	font-weight: bold; 
+    padding-bottom: 5px;
+	padding-left: 10px;
+}
+
+.ccBasketSetBody {
+	padding:5px 5px 10px 10px;
+}
+
+.ccBasketSetButtons {
+	text-align: right; 	
+	position: absolute; 
+	top: 5px;
+	right: 10px;
+}
+
+.ccBasketActions {
+	width: 180px; 	
+}
+
+.ccBasketModelDesc {
+	/*position: relative; */
+	padding-Right:20px;
+	padding-bottom:8px;
+	/*height:30px;*/
+}
+
+.ccModellCommonVariantTitle {
+    font-weight:bold;
+}
+
+
+.ccModellVariantTitle {
+}
+
+.ccModellVariantValue {
+    font-weight:bold;
+}
+
+.ccBasketItem {
+	font-weight: bold;
+	padding: 1px 5px 1px 3px;
+}
+
+img.ccBasketCfgImg {
+	height:15px;
+}
+
+.ccBasketRemark  {
+	background: transparent url('images/warning.gif') left center no-repeat; 
+	padding: 2px 3px 2px 22px;
+	/*line-height: 21px;*/
+}
+
+.ccBasketCfg  {
+	border-top: 1px solid #EEE;   
+	clear: both;
+	min-width: 300px;
+	position: relative;
+	padding: 1px 5px 1px 3px;
+    font-size: 9pt;
+    line-height: 1.1em;
+    display: inline-block;
+    width: 100%;
+}
+
+.ccBasketCfgGroup{
+	font-weight: bold;
+	clear: both;
+	padding: 5px 5px 1px 3px;
+    font-size: 9pt;
+}
+
+.ccBasketCfgVariant {
+	border-top: 1px solid #EEE;   
+	clear: both;
+	min-width: 300px;
+	position: relative;
+	padding: 1px 5px 1px 3px;
+    font-size: 9pt;
+    line-height: 1.1em;
+}
+
+.ccBasketCfg1 { 
+	float: left;
+	padding: 1px 5px 1px 0px;
+	width: 28%;
+}
+.ccBasketCfg2 { 
+	width: 8%;	
+	text-align: center;
+	float: left;
+	padding: 1px 5px 1px 0px;
+	overflow: hidden;
+}
+.ccBasketCfg2 img {
+	width: 15px;
+} 
+.ccBasketCfg3 { 
+  float: left;
+  padding: 1px 0px;
+  width: 49%;
+}
+
+.ccBasketCfg3  span{ 
+	white-space: nowrap;
+}
+
+.ccBasketCfg4 { 
+	padding: 1px 5px 1px 0px;
+	width: 13%;
+	text-align: right;
+	right: 0px;
+	top: 0px;
+	position: absolute;
+}
+
+.ccBasketQuantityInput {
+	width: 60px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.ccBasketQuantitySlider {
+	width: 350px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.ccArchivAction {
+	width: 200px;
+}
+/*
+.ccBasketGroup {
+	display: block;
+	clear: both;
+	overflow: auto; 
+	color: #666666;
+	background-color: #EBEBEB;
+	border-left: 1px solid #C5C5C5;
+	border-right: 1px solid #C5C5C5;
+	border-top: 1px solid #C5C5C5;
+	padding: 0.4em 0.6em;
+}
+.ccBasketGroup p{
+	margin-left: -0.6em;
+	padding: 0 0.6em;
+}
+.ccBasketGroupNr {
+	font: 9pt Arial, Helvetica, sans-serif;
+	color: #666666;
+	border-left: 1px solid #C5C5C5;
+	border-right: 1px solid #C5C5C5;
+	padding: 5 10 5 10px;
+}
+.BasketGroupDesc {
+	font: 9pt Arial, Helvetica, sans-serif;
+	color: #666666;
+	border-left: 1px solid #C5C5C5;
+	border-right: 1px solid #C5C5C5;
+	padding: 5 10 5 10px;
+}
+.BasketGroupItems {
+	display: block;
+	clear: both;
+	overflow: auto; 
+	padding: 5px;
+}
+.ListGroupItems {
+	margin-bottom: 10px;
+}	
+
+#MainList {
+	width: 100%;
+}
+
+#Toolbar {
+	clear: both;
+	bottom: 15px;
+	left: 0px;
+	position: absolute;
+	width: 100%;
+	z-index: 10;
+	padding-left:10px;
+}
+#TabPanel {
+	width: 100%;
+}
+#TabContent{
+	width: 100%;
+}
+
+
+*/
+#ccZoomPanel {
+	-moz-box-sizing:border-box;box-sizing:border-box;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#ccTitleInfo {
+
+}
+#ccSubTitleInfo {
+	font-size: 9pt;
+	color: #666666;
+}
+
+#ccFilter {
+	text-align: right;
+}
+
+.ccListTitle {
+	padding: 15px 3px 3px 5px;
+	font-size: 12pt;
+	font-weight: bold;
+	color: #666666;
+	float: left;
+	padding: 5px;
+}
+
+.ccCatalogVersionTooltip {
+	/*font-size: 8pt;
+	line-height: 1.1em;*/
+	text-align: left;
+}
+
+.ccTooltipContent {
+	display: none;
+}
+
+.ccCatalogListLable {
+	max-height: 60px;
+	max-width: 80px;
+}
+
+.ccCatalogCodex {
+	padding: 15px 3px 3px 5px;
+	text-align: right;
+	font-size: 14pt;
+	font-weight: bold;
+	color: #666666;
+}
+.ccCatalogShortDesc {
+	padding: 4px 3px 3px 5px;
+	font-size: 11pt;
+	font-weight: bold;
+	clear: both;
+	color: #666666;
+}
+
+.ccCatalogDesc td  {
+	font-size: 10pt;
+	color: #666666;
+	vertical-align: top;
+}
+
+.ccCatalogDocsTitle {
+	padding: 15px 3px 3px 5px;
+	font-size: 12pt;
+	font-weight: bold;
+	color: #666666;
+	clear: both;
+}
+.ccCatalogDocs  {
+	padding: 0px 3px 0px 5px;
+	clear: both;
+}
+
+.ccCatalogDocs  a{
+	font-size: 10pt;
+	color: #666666;
+	text-decoration: none;
+}
+
+/* ***************************************************** */
+#ccStoreFinderHeader {
+	padding-top: 10px;
+	color: #666666;
+	font: 9pt Arial,Helvetica,sans-serif;
+	height: 50%;
+}
+.ccStoreFinderTitle {
+	font-size: 14pt; 
+	font-weight: bold; 
+	padding: 0px 0px 15px 13px;
+}
+
+#ccSF_MenuWrapper {
+	height: 113px;
+	padding-left: 10px;
+}
+#ccSF_MapWrapper {
+	height: 100%;
+	padding-left: 10px;
+}
+#ccSF_ZipCode, #ccSF_SubmitFind, #ccSF_CountryDropdown {
+	width: 250px; 
+	margin: 3px 15px 3px 3px;
+}
+
+#ccSF_ZipCode {
+	background: none repeat scroll 0 0 #F9FAFB;
+  border: 1px solid #B9C2CB;
+  border-radius: 4px 4px 4px 4px;
+	height: 1.9em;
+}
+
+.ccStoreFinderDistance {
+	font-size: 30px; 
+	text-align: center; 
+	padding:10px;
+}
+
+
+
+
+/* ***************************************************** */
+.ccGalleryItem,  .ccGalleryItemSel {
+	font-size: 8pt;
+	cursor: pointer;
+	margin: 0px 0px 10px 10px;
+	float: left;
+	overflow: hidden;
+	/*text-align: right;*/
+	position: relative;
+	/*padding: 0 5px;*/
+  border:1px solid #DDD;   
+	font-weight: normal;
+	color:#666666;
+	border-radius: 8px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+	text-align: center;
+}
+
+.ccGalleryItemSel  {
+  border: 1px solid #666666;   
+	font-weight: bold;
+	color: #000000;
+}
+.ccGalleryItem div.img, .ccGalleryItemSel div.img{
+	background-repeat: no-repeat; 
+	background-position: center center; 
+	background-color: #FFF;
+}
+
+.ccGalleryItem div.txt, .ccGalleryItemSel div.txt{
+	font-size: 12px;
+	line-height: 1.1em;
+	/*font-size: 1.3em;
+	line-height:1.5em;*/
+	font-weight: normal;
+	text-align: center;
+	padding: 2px 2px 2px 2px;
+	width: 100%;
+	bottom: 0px;
+	height: 30px;
+	position: absolute;
+	left: 0px;
+}	
+
+.ccItemLOGO {
+	width: 120px;
+    height: 120px;
+	background-position: center center;
+}	
+
+.ccItemLOGO div.img {
+	width: 110px;
+    height: 85px;
+    background-size: contain;
+    margin: 0px 5px;
+}	
+
+.ccItemModelOpt, .ccItemModelOptSel {
+	height: 160px;
+	padding-top: 6px;
+	width: 160px;
+	border: 2px solid #FFF;
+}
+.ccItemModelOpt div.img, .ccItemModelOptSel div.img{
+  height: 125px;
+}	
+
+.ccItemModelOptSel{
+	border-color: #F0713A;
+}
+
+.ccDisabled {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* msie */
+    -webkit-filter: grayscale(100%);
+       -moz-filter: grayscale(100%);
+         -o-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+            filter: grayscale(100%); 
+}
+
+.ccItemCATALOG, .ccItemCATALOGSel {
+	width: 160px;
+    height: 160px;
+}	
+.ccItemCATALOG div.img, .ccItemCATALOGSel div.img{
+    height: 125px;
+    /*background-size: cover;*/
+}	
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) /* IPAD */ 
+{ 
+    .ccItemCATALOG, .ccItemCATALOGSel {
+	    width: 155px;
+        height: 155px;
+    }	
+    .ccItemCATALOG div.img, .ccItemCATALOGSel div.img{
+        height: 120px;
+        /*background-size: cover;*/
+    }	
+}
+
+.ccItemPROMOART, .ccItemPROMOARTSel {
+	width: 220px;
+    height: 220px;
+}	
+
+.ccItemPROMOART div.img, .ccItemPROMOARTSel div.img{
+    height: 185px;
+    background-size: contain;
+}	
+
+.ccItemPROMOART .VKP1, .ccItemPROMOARTSel .VKP1{
+    position: absolute;
+	bottom: 38px;
+    right: 8px;
+	display: inline-block;
+	font-size: 14pt;
+    font-weight: bold;
+    color: red;
+}	
+
+.ccItemPROMOART .VKP2, .ccItemPROMOARTSel .VKP2{
+    position: absolute;
+	bottom: 60px;
+    right: 8px;
+	display: inline-block;
+	font-size: 10pt;
+    font-weight: normal;
+    text-decoration:line-through;
+    color: grey;
+}	
+
+.ccItemARTICLE, .ccItemARTICLESel {
+	background-position:  155px center;
+	min-height: 100px;
+	padding: 6px 6px 25px;
+	width: 240px;
+	display: inline-block;
+	text-align: left;
+	cursor: default;
+}	
+
+.ccGalleryItem .ccPlSearch {
+	position: absolute;
+	right: 3px;
+	top: 33px;
+	cursor: pointer;
+	opacity: 0.6;
+	filter: alpha(opacity=60);    /* ie8 und earlier */	
+}
+
+.ccGalleryItem .ccPlConfig {
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+	cursor: pointer;
+	border: 2px solid #E3E3E3;
+	border-radius: 4px;
+	/*padding: 1px;*/
+}
+
+.ccGalleryItem .ccPlConfig:hover {
+	background-color:#E3E3E3;
+}
+
+.ccItemARTICLE div.img, .ccItemARTICLESel div.img{
+	background-size: auto auto;
+	height: 110px;
+	position: absolute;
+	right: 5px;
+	top: 10px;
+	width: 110px;
+}	
+.ccItemARTICLE div.txt, .ccItemARTICLESel div.txt{
+	position: relative;
+	display: inline-block;
+	font-size: 1.1em;
+	line-height: 1.1em;
+	padding: 4px 8px;
+	text-align: left;
+	vertical-align: middle;
+	height: auto;
+	max-height: 90px;
+	width: 140px;
+	top: 5px;
+	overflow: hidden;
+}	
+.ccSize {
+	bottom: 5px;
+	left: 15px;
+	position: absolute;
+}
+.ccArtCodex {
+	font-weight: bold;
+    font-size: 14pt;
+}
+.ccCodex {
+	font-weight: bold;
+}
+.ccName {
+	font-size: 8pt;
+}
+
+.ccItemCATEGORY, .ccItemCATEGORYSel {
+	width: 115px;
+  height: 100px;
+	padding-top: 6px;
+}	
+.ccItemCATEGORY div.img, .ccItemCATEGORYSel div.img{
+  height: 70px;
+}	
+
+.pImg {
+	padding-top:5px;
+	width: 60px;
+}
+.pImg  img{
+	width: 100%;
+}
+
+.ccCatI {
+	background: url("images/sprite_config.png") no-repeat scroll -6px -67px transparent;
+}
+.ccCatA {
+	background: url("images/sprite_config.png") no-repeat scroll -20px -67px transparent;
+}
+.ccCatC {
+	background: url("images/sprite_config.png") no-repeat scroll -36px -67px transparent;
+}
+.ccCatP {
+	background: url("images/sprite_config.png") no-repeat scroll -51px -67px transparent;
+}
+.ccCatI, .ccCatA, .ccCatC, .ccCatP {
+	-moz-transition: all 0.2s ease-out 0s;
+	cursor: pointer;
+	padding: 5px 0px 0px 12px;
+	margin-left: 2px;
+	opacity: 0.8;
+}
+
+
+.pCol {
+	text-align: right;
+}
+.pColTot{
+	text-align: right;
+	font-weight: bold;
+	font-size: 12pt;
+}
+.InputQuantity {
+	text-align: right;
+	width: 55px;
+}
+#debug {
+    padding:30px;
+    font-size:11pt;
+    color: #888;
+}
+
+#debug table {
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+#debug td {
+    border: 1px solid #AAA;
+    font-size: 9pt;
+    padding: 3px;
+}
+
+.ccCD {
+	clear: both;
+	padding: 5px 0px 5px 0px;
+	color: #666666;
+	font-size: 9pt;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	background-color: #FFF;
+	border-top: 1px solid #EEE;
+    z-index:10000;
+}
+
+.ccUserdata {
+	padding-left: 15px;
+}
+
+.ccFootherContent {
+	float: left;
+}
+
+.ccCDUserdata {
+	float: left;
+}
+.ccFootherContent {
+	float: left;
+}
+
+.ccFootherContent  a {
+	color: #656565;
+	font-size: 10px;
+	line-height: 11px;
+	margin-left: 12px;
+	text-decoration: none;
+}
+
+#ccHTMLContent {
+	padding: 0px 20px;
+	max-width: 800px;
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+
+#ccCopyright {
+	text-align: right;
+	float: right;
+	padding-right: 15px;
+	color: #CCC;
+	text-decoration: none;
+    cursor: pointer;
+}
+
+.ccNoEntry {
+	padding: 10px; 
+}
+
+.ccNewFeatureWarning {
+	color: #55B;
+	padding: 10px 10px 10px 27px;
+	background:url(images/warning.gif) 5px 10px no-repeat;
+}
+
+.ccOfflineDownload, .ccOfflineUpdate {
+	-moz-transition: all 0.2s ease-out 0s;
+	background: url("images/sprite_config.png") no-repeat scroll -80px 0px transparent;
+	cursor: pointer;
+	width: 52px;
+	height: 40px;
+	opacity: 1;
+}
+.ccOfflineOK {
+	-moz-transition: all 0.2s ease-out 0s;
+	background: url("images/sprite_config.png") no-repeat scroll 0px -45px transparent;
+	width: 24px;
+	height: 24px;
+	opacity: 1;
+}
+
+/* news reader */
+
+
+.ccDivaNewsTeaser {
+    border: 1px solid #636363;
+    margin: 10px 0px 0px 0px;
+    /*border-radius: 5px;*/
+    background-color: #EEE;
+    height: 130px;
+    text-align:center;
+}
+
+.ccNewsBanner {
+    position: relative;
+    overflow: hidden;
+    text-align: right;
+}
+
+.ccNewsSlide {
+    /*border-radius: 16px;*/
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    text-align: right;
+}
+.ccNewsSlide .ccNewsImage img {
+    width: 100%;
+}
+.ccNewsSlide .ccNewsTitle {
+    padding: 5px 20px;
+    margin: 60px 0px 0px 0px;
+    float: right;
+    /*width: 100%;*/
+    background-color: rgba(255, 255, 255, 0.6);
+    font-weight: bolder;
+    font-size:22pt;
+}
+.ccNewsSlide .ccNewsBreak {
+    clear: both;
+} 
+.ccNewsSlide .ccNewsDesc {
+    padding: 5px 20px;
+    float: right;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.6);
+    font-size:13pt;
+}
+
+.ccNewsItem {
+    position: relative;
+    cursor: pointer;
+}
+
+.ccDivaNewsList {
+    height: 100%;
+    overflow-y: scroll;
+    padding:10px 10px 40px 10px;
+    -webkit-overflow-scrolling: touch;
+    font-size: 10pt;
+    line-height: 1.5em;
+}
+
+
+.ccDivaNewsList .ccNewsItem {
+    padding: 0px 0px 20px 0px;
+    border-top: 1px solid #DDD;
+}
+       
+.ccDivaNewsList .ccNewsImage {
+    width: 115px;
+    padding: 5px;
+}
+.ccDivaNewsList  .ccNewsImage img {
+    width: 100px;
+}
+
+.ccDivaNewsList .ccNewsCell {
+    padding-right: 80px;
+}
+
+.ccDivaNewsList  .ccNewsTitle {
+    font-weight: bolder;
+}
+
+.ccDivaNewsList  .ccNewsDate {
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    color: grey;
+}
+.ccDivaNewsList  .ccNewsDesc {
+}
+
+.ccDivaTeaserImage
+{
+    border: 1px solid #636363;
+    height: 225px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    font-size: 9pt;
+	padding-bottom: 10px;
+    text-align: center;
+}
+
+.ccDivaTeaserImage .ccNewsImage img {
+	margin-top: 20px;
+    height: 100px;
+}
+
+.ccDivaTeaser
+{
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    font-size: 9pt;
+	padding-bottom: 10px;
+    border: 1px solid #DDD;
+    height: 100%;
+}
+
+.ccDivaTeaser .ccBig, .ccDivaTeaserImage .ccBig {
+    font-size: 12pt;
+    width: 100%;
+}
+
+.ccDivaNewsHeader {
+    background-color: #636363;
+    color: white;
+    padding:5px;
+    font-weight: bold;
+    font-size: 11pt;
+}
+
+.ccDivaNewsHeader span {
+    cursor: pointer;
+}
+.ccDivaTeaser .ccSubline, .ccDivaHTMLTeaser .ccSubline {
+    font-size: 12pt;
+    padding: 10px;
+}
+.ccDivaTeaser .ccNormal, .ccDivaHTMLTeaser .ccNormal, .ccDivaTeaserImage .ccNormal {
+    padding: 5px 10px;
+}
+
+.ccNewsListNav {
+    right: 0px;
+    position: absolute;
+    padding: 10px 20px 10px 0px;
+    width: 100%;
+    bottom: 0px;
+    height: 30px;
+    background: #EEE;
+    text-align: right;
+}
+
+.ccDivaNewsListTeaser {
+    overflow-y: scroll;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+    font-size: 9pt;
+    background: white;
+    padding-bottom: 10px;
+    border: 1px solid #DDD;
+}
+
+.ccDivaNewsListTeaser .ccNewsItem {
+    position: relative;
+    padding: 5px;
+}
+.ccDivaNewsListTeaser .ccNewsImage {
+    width: 65px;
+}
+.ccDivaNewsListTeaser  .ccNewsImage img {
+    width: 60px;
+}
+.ccDivaNewsListTeaser  .ccNewsTitle {
+    font-weight: bolder;
+}
+.ccDivaNewsListTeaser  .ccNewsDate {
+    display: none;
+}
+.ccDivaNewsListTeaser  .ccNewsDesc {
+}
+
+.ccNewsDetailContainer {
+    overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+    height: 540px;
+}
+
+.ccNewsItemDetail {
+    font-size: 10pt;
+	color: #444;
+    line-height: 1.5em;
+}
+
+.ccNewsItemDetail .ccNewsTitle {
+    font-weight: bolder;
+    font-size: 18pt;
+    margin: 40px 20px 0px 20px;
+}
+.ccNewsItemDetail .ccNewsTitle1 {
+    font-weight: bolder;
+    font-size: 14pt;
+	width:100%;
+    padding-top: 15px;
+}
+.ccNewsItemDetail .ccNewsBody {
+    position: relative;
+    margin: 10px 0px;
+    width: 100%;
+	/*border-top: 1px solid #CCC;*/
+}
+.ccNewsItemDetail .ccNewsImage {
+    width: 320px;
+    min-height: 180px;
+	vertical-align: top;
+    padding: 15px 0px 0px 20px;
+
+}
+.ccNewsItemDetail .ccNewsImage img {
+    width: 300px;
+    border: 1px solid #DDD;
+}
+.ccNewsItemDetail .ccNewsDesc {
+    padding-bottom: 40px;
+	vertical-align: top;
+
+}
+
+.ccNewsItemDetail .ccNewsNav {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.ccNewsItemDetail .ccNewsNav span {
+    padding: 5px;
+}
+
+.ccHidePrices {
+    text-decoration: line-through;
+}
+
+

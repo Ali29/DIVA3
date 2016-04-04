@@ -1,0 +1,19 @@
+<form id='ccLogForm'>
+    <div class='ccStatus' data-bind='html:LogInfo, style:{ color: LogColor }'></div>
+    <ul data-bind='events: { keydown: doCheckEnter }'>
+        <li>
+            <label for="Username" class="required" data-bind='html:txt("USERNAME")'></label>
+            <input type="text" class="k-textbox" required data-bind='value: ConfirmUsername, attr: { validationMessage: validationMsg("USERNAME") }'/>
+        </li>
+        <li>
+            <label for="Password" class="required" data-bind='html:txt("PASSWORD")'></label>
+            <input type="Password" class="k-textbox" required data-bind='value: ConfirmPassword, attr:{validationMessage:validationMsg("PASSWORD")}'/>
+        </li>
+        <li  class="accept">
+            <label></label>
+            <button class="k-button ccBtnImportant" type="submit"  data-bind='events: {click: onConfirmLoginClicked}, html:LoginButtonTitle'>Submit</button>
+            <span class="k-button" data-bind='events: { click: onCancelClicked }, html: txt("CANCEL")'></span>
+        </li>
+        <li class="status"></li>
+    </ul>
+</form>

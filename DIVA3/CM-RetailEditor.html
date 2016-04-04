@@ -1,0 +1,24 @@
+<div class="ccEditContainer">
+	<ul>
+		<li><label>#:txt("COMPANY_NAME")#:</label><input data-bind="value:Name" class="k-textbox"/></li>
+		<!--li><label>#:txt("COMPANY_NAME2")#:</label><input data-bind="value:Name2" class="k-textbox"/></li-->
+		<li><label>#:txt("ADDRESS")#:</label><input data-bind="value:Address" class="k-textbox"/></li>
+		<li><label>#:txt("ZIPCODE")# / #:txt("CITY")#:</label><input data-bind="value:ZIP" class="k-textbox"/> <input data-bind="value:City" class="k-textbox"/></li>
+		<li><label>#:txt("COUNTRY")#:</label><input data-bind="value:Country"class="k-textbox"/></li>
+		<li><label>#:txt("TELEPHONE")# / #:txt("FAX")#:</label><input data-bind="value:Tel" class="k-textbox"/> <input data-bind="value:Fax" class="k-textbox"/></li>
+		<li><label>#:txt("WWW")# / #:txt("MAIL")#:</label><input data-bind="value:WWW" class="k-textbox"/> <input data-bind="value:eMail" class="k-textbox"/></li>
+		<li><label>#:txt("GLN")#:</label><input data-bind="value:GLN" class="k-textbox"/></li>
+		<li><label>#:txt("LOGO")#:</label><img class="ccEditLogo" data-bind="attr: {src: Logo}">&nbsp;<span id="ccAddRetailLogo" class="k-button">Neu</span></li>
+	</ul>
+	<div>Einstellungen Verkauf</div>
+	<ul>
+		<li><label>#:txt("AUTO_CREATE_OFFLINE_PRIORITY")#:</label><select data-role='dropdownlist' data-bind='source: AutoCreateOfflinePriorities, value: AutoCreateOfflinePriority' data-text-field='name' data-value-field='value' style='width:250px'></select></li>
+	</ul>
+	<div>Warenkorbanbindung IWOfurn</div>
+	<ul>
+		<li><label>RecipientGLN:</label><input data-bind="value:IwofurnRecipientGLN" class="k-textbox"/></li>
+		<li><label>SenderGLN:</label><input data-bind="value:IwofurnSenderGLN" class="k-textbox"/></li>
+		<li><label>IWOfurn Username:</label><input data-bind="value:IwofurnUsername" class="k-textbox"/></li>
+		<li><label>IWOfurn Password:</label><input type="Password" data-bind="value:IwofurnPassword" class="k-textbox"/></li>
+	</ul>
+</div>

@@ -1,42 +1,50 @@
-<!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
+<!DOCTYPE HTML>
+<html dir="ltr" lang="de-DE">
+<head>
+	<title>DIVA APP 3.0 - myCatalogCenter Edition </title> 
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+	<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+	<META HTTP-EQUIV="EXPIRES" CONTENT="0">
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    <link type="text/css" href="kendo/styles/kendo.common.min.css" rel="stylesheet"/>
+	<link type="text/css" href="kendo/styles/kendo.default.min.css" rel="stylesheet"/>
+	<link type="text/css" href="css/myCC-Common.2.1.322.css" rel="stylesheet"/>
+	<link type="text/css" href="css/myCC-Reader.2.1.322.css" rel="stylesheet"/>
+    <link type="text/css" href="ccPlanner/css/main.css" rel="stylesheet" />
 
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World!</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
-    </body>
+	<script type="text/javascript" charset="utf-8" src="js/jquery.1.9.1.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/jszip.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/jszip-utils.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/fileHelper.js"></script>
+	<script type="text/javascript" charset="utf-8" src="kendo/js/kendo.all.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="kendo/js/cultures/kendo.culture.de-DE.min.js"></script>
+	<script type="text/JavaScript" charset="utf-8" src="js/myCC-Plugins.2.1.322.min.js"></script> 
+	<script type="text/JavaScript" charset="utf-8" src="js/myCC-DIVA.2.1.322.min.js"></script> 
+	<script type="text/JavaScript" charset="utf-8" src="js/DivaStarterMobile-2.1.322.js"></script> 
+	 <script type="text/JavaScript" charset="utf-8" src="js/jQuery-ui-1.9.2.js"></script> 
+	 <script type="text/JavaScript" charset="utf-8" src="js/jquery.mousewheel.min.js"></script> 
+	 <script type="text/JavaScript" charset="utf-8" src="ccPlanner/js/fabric.js"></script> 
+	 <script type="text/JavaScript" charset="utf-8" src="ccPlanner/js/clipper.js"></script> 
+	 <script type="text/JavaScript" charset="utf-8" src="ccPlanner/js/myCC-SvgPlanner.2.1.322.min.js"></script> 
+
+</head>	
+<body style="margin: 0px;">
+	<div>
+		<div id="ccTopBanner" class="ccNoPrint">
+          <div class="ccDivaBanner">
+            <div id="ccInfo" style="position: absolute; z-index:10000; top:0px; right:0px; width:100px; height:100px;">&nbsp;&nbsp;&nbsp;</div>
+  	    </div>	
+  	  </div>	
+		<div id="ccNewsPanel" class="ccNoPrint"></div>
+		<div id="ccLoginCI" class="ccNoPrint"></div>		
+		<div id="myCCReader"></div>
+        <div id="myCCCategorymanager" style="display: none"></div>
+        <div id="ccMainPanel" class="ccNoPrint"></div>		
+		<div id="ccRoomPlanner" class="ccNoPrint"></div>			
+		<div id="debug" style="display: none;" class="ccNoPrint"></div>
+	</div>
+</body>
 </html>

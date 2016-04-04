@@ -1,0 +1,239 @@
+<div>
+    <div>
+        <ul data-role="menu" data-bind="events: { select: onSelectMenu }, visible: MenuIsVisible">
+            <li id="ccStartSettingsMenu"><span data-bind='html: txt("START_SETTINGS")'></span></li>
+            <li id="ccDownLoadSettingsMenu"><span data-bind='html: txt("OFFLINE_SETTINGS")'></span></li>
+            <li id="ccFileSystemShow" data-bind='visible: isAdminMode'>Filesystem</li>
+            <li data-bind='visible: isAdminMode'>Database
+                <ul>
+                    <li id="ccDBUserMenu">User</li>
+                    <li id="ccDBCatalogsMenu">Catalogs</li>
+                    <li id="ccDBAccountsMenu">Accounts</li>
+                    <li id="ccDBBasketsMenu">Baskets</li>
+                    <li id="ccDBFavoritsMenu">Favorits</li>
+                    <li id="ccDBMasterMenu">sqlite_master</li>
+                    <li id="ccDBReset">Reset Database</li>
+                </ul>
+            </li>
+            <li id="ccShowDebug" data-bind='visible: isAdminMode'>Debug</li>
+            <li id="ccRestart"><span data-bind='html: txt("RESTART")'></span></li>
+            <li id="ccAdmin">Administrator
+                <!--ul>
+                    <li data-bind='visible: isAdminMode'>Filesystem
+                        <ul>
+                            <li id="ccFileSystemShowSizes">Show Sizes</li>
+                            <li id="ccDeleteAllOfflineData">Delete All Files and DB</li>
+                            <li id="ccDeleteUnusedOfflineData">Delete unused Files</li>
+                        </ul>
+                    </li>
+                </ul-->
+            </li>
+        </ul>
+    </div>
+    <div id="ccSettingsNavButton">
+        <button class="k-button ccBtnImportant" t='1' type="submit"  data-bind='events: { click: onSaveClicked }, html: txt("SAVE_AND_CLOSE")'></button>
+        <button class="k-button" t='0' type="submit"  data-bind='events: { click: onSaveClicked }, html: txt("SAVE")'></button>
+        <button class="k-button" type="submit"  data-bind='events: { click: onCloseClicked }, html: txt("CLOSE")'></button>
+    </div>
+    <div id="ccSettingsDialog">
+        <div class='ccBody' data-bind='visible: ShowStartSettings'>
+            <h4 data-bind='html: txt("USERPROFILE")'></h4>
+            <ul>
+                <li>
+                    <label for="AutoLoginName" data-bind='html: txt("USERNAME")'></label>:&nbsp;
+                    <span data-bind='html: Username'></span>,&nbsp;&nbsp;
+                    <span  data-bind='html: txt("LICENSE_CODE")'></span>:&nbsp;
+                    <span data-bind='html: LicenseKey'></span>&nbsp;&nbsp;&nbsp;
+                    <button class="k-button" type="submit"  data-bind='events: { click: LogOut }, html: txt("LOGOUT")'></button>
+                </li>
+                <li>
+                    <label for="AutoLogin"></label>
+                    <input type="checkbox" name="AutoLogin" data-bind='checked: Autologin'/>&nbsp;
+                    <span data-bind='html: txt("AUTO_LOGIN_ON_START")'></span>&nbsp;
+                    <!--span class="ccPlToolIcon ccTbInfo" data-bind='attr: { title: txt("AUTO_LOGIN_ON_START_INFO") }'></!--span-->
+                </li>
+            </ul>
+            <h4 data-bind='html: txt("COMMON_START_TITLE")'></h4>
+            <ul>
+                <li>
+                    <label for="InitStartMode" data-bind='html: txt("INIT_START_MODE")'></label>
+                    <input type="radio" value="POS" name="InitStartMode" data-bind="checked: Settings.InitStartMode" />&nbsp;<span data-bind='    html: txt("POS_MODE")'></span>&nbsp;&nbsp;
+                    <input type="radio" value="POI" name="InitStartMode" data-bind="checked: Settings.InitStartMode" />&nbsp;<span data-bind='    html: txt("POI_MODE")'></span>&nbsp;
+                    <!--span class="ccPlToolIcon ccTbInfo" data-bind='attr: { title: txt("INIT_START_MODE_INFO") }'></!--span-->
+                </li>
+                <li>
+                    <label data-bind='html: txt("POS_PASSWORD")' ></label>
+                    <input type="text" style="width:250px;" name="POSPassword" class="k-textbox" data-bind='value: Settings.POSPassword'/>&nbsp;&nbsp;
+                    <span class="ccPlToolIcon ccTbInfo" data-bind='attr: { title: txt("POS_PASSWORD_INFO") }'></span>
+                </li>
+                <li>
+                    <label data-bind='html: txt("COMMON_PRICE_TYPE")' ></label>
+                    <input type="text" style="width:250px;" name="CommonPriceType" class="k-textbox" data-bind='value: Settings.CommonPriceType'/>&nbsp;&nbsp;
+                    <span class="ccPlToolIcon ccTbInfo" data-bind='attr: { title: txt("COMMON_PRICE_TYPE_INFO") }'></span>
+                </li>
+
+            </ul>
+            <h4 data-bind='html: txt("DEFAULT_BASKET_VALUES")'></h4>
+            <ul>
+                <li>
+                    <label for="RetailerName" data-bind='html: txt("FURNITURE_STORE")'></label>
+                    <input type="text" style="width:250px;" name="RetailerName" class="k-textbox" data-bind='value: Settings.RetailerName, attr: { placeholder: DefaultRetailerName }'/>&nbsp;&nbsp;
+                    <span data-bind='html: txt("FURNITURE_STORE_NR")'></span>
+                    <input type="text" style="width:100px;" name="RetailerNr" class="k-textbox" data-bind='value: Settings.RetailerNr, attr: { placeholder: DefaultRetailerNr }'/>&nbsp;
+                </li>
+                <li>
+                    <label for="RetailerName" data-bind='html: txt("SELLER")'></label>
+                    <input type="text" style="width:250px;" name="Salesperson" class="k-textbox" data-bind='value: Settings.Salesperson, attr: { placeholder: DefaultSalesperson }'/>&nbsp;&nbsp;
+                    <input type="text" style="width:250px;" name="SalespersonEmail" class="k-textbox" data-bind='value: Settings.SalespersonEmail, attr: { placeholder: DefaultSalespersonEmail }'/>&nbsp;
+                </li>
+                <!--li>
+                    <label data-bind='html: txt("GALLERY_ITEMS_PER_PAGE")'></label>
+                    <input data-role="dropdownlist" data-auto-bind="false" data-text-field="Name" data-value-field="ID"
+                        data-bind="value: Settings.GalleryItemsPerPage, source: ItemsPerPageArray" style="width: 100px" />&nbsp;&nbsp;
+                </!--li-->
+            </ul>
+            <h4 data-bind='html: txt("POS_SETTINGS")'></h4>
+            <ul>
+                <li>
+                    <label data-bind='html: txt("ON_INIT_DO")'></label>   
+                    <input data-role="dropdownlist" data-auto-bind="false" data-text-field="Name" data-value-field="ID"
+                        data-bind="value: Settings.POSInitViewWhat, source: ViewWhatArray" style="width: 250px" />&nbsp;&nbsp;
+                    <input type="checkbox" name="POSShowPrices" data-bind='checked: Settings.POSInitShowPrices'/>&nbsp;
+                    <span data-bind='html: txt("POS_INIT_SHOW_PRICES")'></span>
+                </li>
+            </ul>
+            <h4 data-bind='html: txt("POI_SETTINGS")'></h4>
+            <ul>
+                <li>
+                    <label data-bind='html: txt("ON_INIT_DO")' ></label>
+                    <input data-role="dropdownlist" data-auto-bind="false" data-text-field="Name" data-value-field="ID"
+                        data-bind="value: Settings.POIViewWhat, source: ViewWhatArray" style="width: 250px" />&nbsp;&nbsp;
+                    <input type="checkbox" name="POIShowPrices" data-bind='checked: Settings.POIShowPrices'/>&nbsp;
+                    <span data-bind='html: txt("POI_SHOW_PRICES")'></span>&nbsp;&nbsp;
+                </li>
+                <li>
+                    <label data-bind='html: txt("POI_START_MODULE")'></label>
+                    <input data-role="dropdownlist" data-auto-bind="false" data-text-field="Name" data-value-field="ID"
+                        data-bind="value: Settings.POIStartModule, source: POIStartModuleArray" style="width: 250px" />&nbsp;&nbsp;
+                    <input type="checkbox" name="POIShowConfigurator" data-bind='checked: Settings.POIShowConfigurator'/>&nbsp;
+                    <span data-bind='html: txt("POI_SHOW_CONFIGURATOR")'></span>
+                    
+                </li>
+                <li>
+                    <label data-bind='html: txt("LOAD_PLAYLIST")' ></label>
+                    <input data-role="dropdownlist" data-auto-bind="false" data-text-field="Name" data-value-field="Key"
+                        data-bind="value: Settings.POIPlaylist, source: Playlists" style="width: 250px" />&nbsp;&nbsp;
+                    <span class="ccPlToolIcon ccTbInfo" data-bind='attr: { title: txt("POI_PLAYLIST_INFO") }'></span>
+                </li>
+                <li>
+                    <label data-bind='html: txt("START_PLAYLIST")' ></label>
+                    <input data-role="dropdownlist" data-auto-bind="false" data-text-field="Name" data-value-field="ID"
+                        data-bind="value: Settings.POIStartAutoPlay, source: StartPlaylistArray" style="width: 250px" />&nbsp;&nbsp;
+                    <input type="checkbox" name="POIShowTouchInfo" data-bind='checked: Settings.POIShowTouchInfo'/>&nbsp;
+                    <span data-bind='html: txt("POI_SHOW_TOUCH_INFO")'></span>&nbsp;&nbsp;
+                </li>
+            </ul>
+        </div>
+
+        <div data-bind='visible: ShowDownloadSettings'>
+            <h4 data-bind='html: txt("UPDATE_OFFLINE_MODELLS")'></h4>
+            <ul>
+                <li>
+                    <label>&nbsp;</label>
+                    <span data-bind='events: { click: doAnalyzeOfflineData }, html: txt("UPDATE_OFFINE_DATA")' class='k-button'></span>&nbsp;
+                </li>
+                <li>
+                    <label for="AutoUpdate" data-bind='html: txt("AUTO_LAST_UPDATE")'></label>:&nbsp;
+                    <span data-bind='html: Settings.LastOfflineUpdate'></span>&nbsp;
+                </li>
+                <li>
+                    <label for="AutoUpdate"></label>
+                    <input type="checkbox" name="AutoUpdate" data-bind='checked: Settings.OnStartAutoOfflineUpdate'/>&nbsp;
+                    <span data-bind='html: txt("AUTO_UPDATE_OFFINE_DATA")'></span>
+                </li>
+            </ul>
+
+            <!--h4  data-bind='html: txt("OFFLINE_DATA")'></!--h4>
+            <ul>
+                <li>
+                    <label for="LocalStorage" data-bind='html: txt("STORAGE")'></label>:
+                    <input type="text" style="width:200px;" name="LocalStorage" 
+							        data-role="dropdownlist"
+							        data-text-field="Title"
+                      data-value-field="Id"
+                      data-bind="value: Settings.LocalStorage, source: LocalStorageArr, events: { change: onLocalStorageChange }">
+                </li>
+                <li data-bind='visible: ShowLocalStorageDir'>
+                    <label for="LocalStorageDir" class="required" data-bind='html: txt("SDCARD_DIR")'></label>:
+                    <input type="text" name="LocalStorageDir" class="k-textbox" required data-bind='value: Settings.LocalStorageDir, attr: { validationMessage: validationMsg("SDCARD_DIR") }'/>
+                </li>
+            </ul-->
+
+
+            <h4  data-bind='html: txt("OFFLINE_SETTINGS")'></h4>
+            <ul>
+                <!--li>
+                    <label for="IncludeColorsim"></label>
+                    <input type="checkbox" name="IncludeColorsim" data-bind='checked: IncludeColorsim'/>&nbsp;<span data-bind='html:txt("INCLUDE_COLORSIM")'></span>
+                </li-->
+                <li>
+                    <label for="DownloadSource" data-bind='html: txt("DOWNLOAD_SOURCE")'></label>:
+                    <input type="text" style="width:200px;" name="DownloadSource" 
+							        data-role="dropdownlist"
+							        data-text-field="Title"
+                      data-value-field="Id"
+                      data-bind="value: Settings.DownloadSource, source: DownloadSourceArr, events: { change: onDownloadSourceChange }">
+                </li>
+                <li data-bind='visible: ShowDownloadSourceURL'>
+                    <label for="DownloadSourceURL" class="required" data-bind='html: txt("DOWNLOAD_SOURCE_URL")'></label>:
+                    <input type="text" name="DownloadSourceURL" class="k-textbox" required data-bind='value: Settings.DownloadMediaServerURL, attr: { validationMessage: validationMsg("DOWNLOAD_SOURCE_URL") }'>
+                </li>
+                <li data-bind='visible: ShowDownloadSourceStorage'>
+                    <label for="DownloadSourceStorage" class="required" data-bind='html: txt("DOWNLOAD_SOURCE_STORAGE")'></label>:
+                    <input type="text" name="DownloadSourceStorage" class="k-textbox" required data-bind='value: Settings.DownloadSourceStorage, attr: { validationMessage: validationMsg("DOWNLOAD_SOURCE_STORAGE") }'/>
+                </li>
+                <li>
+                    <label for="DIVA3DSource" data-bind='html: txt("DIVA3D_SOURCE")'></label>:
+                    <input type="text" style="width:200px;" name="DIVA3DSource" 
+							        data-role="dropdownlist"
+							        data-text-field="Title"
+                      data-value-field="Id"
+                      data-bind="value: Settings.DIVA3DSource, source: DIVA3DSourceArr, events: { change: onDIVA3DSourceChange }"
+		            />
+                </li>
+                <li data-bind='visible: ShowDIVA3DSourceURL'>
+                    <label for="DIVA3DSourceURL" class="required" data-bind='html: txt("DIVA3D_SOURCE_URL")'></label>:
+                    <input type="text" name="DIVA3DSourceURL" class="k-textbox" required data-bind='value: Settings.DIVA3DSourceURL, attr: { validationMessage: validationMsg("DIVA3D_SOURCE_URL") }'/>
+                </li>
+                <li  class="accept">
+                    <label></label>
+                    <button class="k-button" type="submit"  data-bind='events: { click: onFixOfflineData }, html: txt("REPAIR_OFFLINE_DATA")'>REPAIR_OFFLINE_DATA</button>
+                </li>
+            </ul>
+        </div>
+        <div data-bind='visible: ShowFileSystem'>
+            <h4>Filesystem</h4><span data-bind='html: DirInfo'></span>
+            <!--label data-bind='html: txt("OFFLINE_USAGE")'></!--label>:
+            <span data-bind='html: OfflineUsage'></span>
+            <a data-bind='events: { click: onCalculateUsageClicked }, html: txt("CALCULATE_USAGE")'></a-->
+            <table style='width: 100%; height:500px;'>
+                <tr>
+                    <td style='width:50%; vertical-align:top;'>
+                        <div id='ccDir'></div>
+                    </td>
+                    <td style='width:50%; vertical-align:top;'>
+                        <div id='ccFilesContent'></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div data-bind='visible: ShowDatabase'>
+            <h4>Database <span data-bind="html: ShowTableName"></span></h4>
+            <input type="text" style="width:400px;" name="userAccount" data-role="dropdownlist" data-text-field="DealerName" data-value-field="BaseDir"
+                 data-bind="value: ActBaseDir, source: UserAccountsArr, events: { change: onUserAccountChange }"/>
+            <input class='k-input' type="text" data-bind="value: ccFilterFreeText, events: { keyup: doFilterFreeText}" placeholder="Search..."/>
+            <div id='ccDB'></div>
+        </div>
+    </div>
+</div>
+

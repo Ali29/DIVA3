@@ -1,45 +1,81 @@
 {
   "ProjectName": "DIVA3",
-  "ProjectGuid": "87638b7f-eb6a-4f1e-850c-2fb054c94b4a",
+  "ProjectGuid": "7785ae69-8c50-4e4f-8019-a57c22f8cde1",
   "projectVersion": 1,
-  "AppIdentifier": "com.telerik.DIVA3",
-  "DisplayName": "DIVA3",
-  "Author": "",
-  "Description": "DIVA3",
-  "BundleVersion": "1.0",
+  "AppIdentifier": "com.crystaldesign.diva",
+  "DisplayName": "DIVA 4",
+  "Author": "Crystal Design Corporation",
+  "Description": "Digitaler Verkaufs-Assistent",
+  "BundleVersion": "4.16",
   "AndroidVersionCode": "1",
   "iOSDeviceFamily": [
-    "1",
     "2"
   ],
-  "iOSBackgroundMode": [],
-  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
-  "FrameworkVersion": "3.7.0",
-  "AndroidPermissions": [
-    "android.permission.INTERNET"
+  "iOSBackgroundMode": [
+    "fetch"
   ],
-  "DeviceOrientations": [
-    "Portrait",
-    "Landscape"
-  ],
-  "AndroidHardwareAcceleration": "false",
-  "iOSStatusBarStyle": "Default",
-  "Framework": "Cordova",
   "WP8TileTitle": "",
   "WP8Publisher": "",
-  "WP8Capabilities": [
-    "ID_CAP_NETWORKING",
-    "ID_CAP_WEBBROWSERCOMPONENT"
-  ],
+  "WP8Capabilities": [],
   "WP8Requirements": [],
-  "WP8PublisherID": "{e77566cb-0d46-490a-9430-1a7f34a819b0}",
-  "WP8ProductID": "{2bcfe55e-cdad-4d53-91d4-9652f12f11b2}",
-  "WPSdk": "8.0",
-  "WP8PackageIdentityName": "1234Telerik.DIVA3",
-  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8PublisherID": "{5e9a20dc-9a6e-4951-b773-084f56faef48}",
+  "WP8ProductID": "{0613d0fb-0d00-4726-87f3-061cd7e44eab}",
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "3.8.0",
+  "CorePlugins": [
+    "com.phonegap.plugins.sqlite@1.0.2",
+    "de.appplant.cordova.plugin.printer@0.7.0",
+    "nl.x-services.plugins.insomnia@4.0.1",
+    "org.apache.cordova.battery-status",
+    "org.apache.cordova.camera",
+    "org.apache.cordova.console",
+    "org.apache.cordova.device",
+    "org.apache.cordova.device-orientation",
+    "org.apache.cordova.dialogs",
+    "org.apache.cordova.file",
+    "org.apache.cordova.file-transfer",
+    "org.apache.cordova.inappbrowser",
+    "org.apache.cordova.keyboard",
+    "org.apache.cordova.media-capture",
+    "org.apache.cordova.network-information",
+    "org.apache.cordova.splashscreen",
+    "org.apache.cordova.statusbar"
+  ],
+  "AndroidPermissions": [
+    "android.permission.ACCESS_COARSE_LOCATION",
+    "android.permission.ACCESS_FINE_LOCATION",
+    "android.permission.ACCESS_LOCATION_EXTRA_COMMANDS",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.ACCOUNT_MANAGER",
+    "android.permission.BROADCAST_STICKY",
+    "android.permission.CAMERA",
+    "android.permission.EXPAND_STATUS_BAR",
+    "android.permission.GET_ACCOUNTS",
+    "android.permission.INTERNET",
+    "android.permission.MANAGE_ACCOUNTS",
+    "android.permission.MODIFY_AUDIO_SETTINGS",
+    "android.permission.READ_CONTACTS",
+    "android.permission.READ_PHONE_STATE",
+    "android.permission.RECEIVE_SMS",
+    "android.permission.RECORD_AUDIO",
+    "android.permission.STATUS_BAR",
+    "android.permission.VIBRATE",
+    "android.permission.WRITE_CONTACTS",
+    "android.permission.WRITE_EXTERNAL_STORAGE"
+  ],
+  "DeviceOrientations": [
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "true",
+  "iOSStatusBarStyle": "Default",
   "WP8SupportedResolutions": [
     "ID_RESOLUTION_WVGA",
     "ID_RESOLUTION_WXGA",
     "ID_RESOLUTION_HD720P"
-  ]
+  ],
+  "Framework": "Cordova",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8PackageIdentityName": "1234Telerik.com.crystaldesign.diva",
+  "WPSdk": "8.0",
+  "iOSDeploymentTarget": "6.0"
 }

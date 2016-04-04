@@ -1,0 +1,72 @@
+<div>
+    <div class='ccSupplierTopBanner' SubModule='CATEGORY_BANNER' data-template='CR-CategoryBanner'></div>
+    <div id="ccLoginNews">
+        <table class='ccDivaNewsPage'>
+            <colgroup>
+	            <col width="25%">
+	            <col width="25%">
+	            <col width="25%">
+	            <col width="25%">
+            </colgroup>
+            <tr>
+                <td colspan='3'>
+                    <div class='ccDivaNewsSlide' SubModule='DIVA_SLIDE' data-template='NEWS-Slide' detail-template='NEWS-Detail'></div>
+                </td>
+                <td class='ccNewsBanner' rowspan='2'>
+                    <div class='ccDivaNewsHeader'><span SubModule='PROMOTION_NEWS'>Branchen News ></span></div>
+                    <div class='ccDivaNewsListTeaser' SubModule='PROMOTION_NEWS' data-template='NEWS-Item' detail-template='NEWS-Detail'></div>
+                    <div class='ccDivaNewsHeader'><span SubModule='DIVA_NEWS'>Produkt News ></span></div>
+                    <div class='ccDivaNewsListTeaser' SubModule='DIVA_NEWS' data-template='NEWS-Item' detail-template='NEWS-Detail'></div>
+                </td>
+            </tr>
+            <tr>
+                <td class='ccDivaRegister'>
+				        <div class='ccDivaTeaserImage'>
+						        <div SubModule='TEASER' Alias='DIVA_START' data-template='NEWS-TeaserImage'></div>
+				        </div> 
+                </td>
+                <td class='ccDivaLogin'>
+				        <div class='ccDivaTeaserImage'>
+						        <div SubModule='TEASER' Alias='SORTIMENT_BROWSER' data-template='NEWS-TeaserImage'></div>
+				        </div> 
+                </td>
+                <td class='ccDivaConsulting'>
+                        <div class='ccDivaTeaserImage'>
+						        <div SubModule='TEASER' Alias='ROOMPLANNER_START' data-template='NEWS-TeaserImage'></div>
+				        </div> 
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    <style scoped>
+        .ccDivaNewsPage {
+            width: 100%;
+            /*border-spacing: 10px;*/
+            padding: 8px;
+            font-size: 9pt;
+        }
+        .ccDivaNewsListTeaser {
+            height: 270px !important;
+        }
+        .ccDivaNewsPage td, .ccDivaNewsList td {
+            vertical-align: top;
+            padding: 5px;
+        }
+        .ccDivaNewsSlide {
+            height:370px;
+        }
+
+        .ccNewsBanner {
+            width: 33%;
+            padding: 8px;
+        }
+        
+        .ccDivaLogin, .ccDivaRegister, .ccDivaConsulting {
+            padding: 20px 0px;
+            width: 25%;
+        }
+
+    </style>
+
+</div>

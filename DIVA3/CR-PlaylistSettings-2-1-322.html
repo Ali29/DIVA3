@@ -1,0 +1,53 @@
+<div>
+    <div id="ccSettingsNavButton">
+        <button class="k-button ccBtnImportant" type="submit"  data-bind='events: { click: onSaveClicked }, html: txt("SAVE_AND_CLOSE")'></button>
+        <button class="k-button" type="submit"  data-bind='events: { click: onCloseClicked }, html: txt("CLOSE")'></button>
+    </div>
+    <div id="ccSettingsDialog">
+        <div class='ccBody'>
+            <h4 data-bind='html: Title'></h4>
+            <ul>
+                <!--li>
+                    <label for="ShowWhat" data-bind='html: txt("SHOW_WHAT")'></label>
+                    <input type="radio" value="0" name="ShowWhat" data-bind="checked: params.ShowWhat" />&nbsp;<span data-bind='    html: txt("ALL")'></span>&nbsp;&nbsp;
+                    <input type="radio" value="1" name="ShowWhat" data-bind="checked: params.ShowWhat" />&nbsp;<span data-bind='    html: txt("SELECTED_FAVORITS_ONLY")'></span>&nbsp;
+                </li-->
+                <li>
+                    <label data-bind='html: txt("IMAGE_DURATION")'></label>:&nbsp;
+                     <input data-role="numerictextbox"
+                        data-format="n0"
+                        data-min="2"
+                        data-max="10"
+                        data-bind="value: params.ImageDuration"
+                        style="width: 180px">
+                </li>
+                <li>
+                    <label data-bind='html: txt("COLORSIM_DURATION")'></label>:&nbsp;
+                     <input data-role="numerictextbox"
+                        data-format="n0"
+                        data-min="2"
+                        data-max="10"
+                        data-bind="value: params.ColorsimDuration"
+                        style="width: 180px">
+                </li>
+            </ul>
+            <h4 data-bind='html: txt("NO_COLORSIM_FAVORITS_DEFINED")'></h4>
+            <ul>
+                <li>
+                    <label data-bind='html: txt("COLORSIM_MAX")'></label>:&nbsp;
+                     <input data-role="numerictextbox"
+                        data-format="n0"
+                        data-min="1"
+                        data-max="1000"
+                        data-bind="value: params.ColorsimMax"
+                        style="width: 180px">
+                </li>
+                <li>
+                    <label data-bind='html: txt("COLORSIM_RANDOM")'></label>:&nbsp;
+                    <input type="checkbox" data-bind='checked: params.ColorsimRandom'/>&nbsp;
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+

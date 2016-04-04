@@ -1,0 +1,104 @@
+	body {
+		/*margin:20px;*/
+	}
+	table {
+		white-space: normal;
+		line-height: normal;
+		font-weight: normal;
+		font-size: 9pt;
+		font-variant: normal;
+		font-style: normal;
+		color: -webkit-text;
+		text-align: start;
+	}
+	
+	tfoot {
+		display: table-row !important;
+	}
+	
+	.ccCD {
+			display:visible !important;
+	}
+	.ccDivaBanner {
+			display:visible !important;
+	}
+	#ccPrintHeader {
+			display: inline-block !important;
+			width: 100%;
+	}
+	
+	.ccBasketCfg {
+		font-size: 8pt !important;
+	}
+	
+	
+	#ccOrdersContent td[role='gridcell'] {
+		border-top: 1px solid #CCC !important;
+		font-size: 8pt !important;
+	}
+	.ccBasketFooterPrice {
+			right: 15px !important;
+	}
+	
+	.k-header {
+		padding: 5px;
+		font-size: 9pt;
+		text-align: left;
+	}
+
+	.ccBasketTitle {
+		font-size: 14pt;
+	}
+	
+	.ccBasketModelDesc {
+		position: relative; 
+		padding-top:5px; 
+		padding-left:0px; 
+		height:auto;
+	}
+
+	.ccAddress {
+		font-size: 9pt;
+		width: 80%;
+		padding: 5px 5px 20px 10px;
+		float: left;
+	}	
+	.ccBasketAddressTitle {
+		font-size: 11pt;
+		color: #666666;
+	}
+	.ccBasketAddress {
+		font-size: 11pt;
+		color: #666666;
+	}
+	
+	.ccDivaNr {
+		clear: both;
+		left: 0px;
+		padding: 5px 5px 5px 10px;
+		font-size: 18pt;
+		color: #666666;
+		background-color: #EEE;
+		border-top: 1px solid #888;
+		border-bottom: 1px solid #888;
+	}
+	
+
+	.ccView {
+		height: auto !important;
+		overflow-x: hidden !important;
+		position: absolute !important;
+		top:40px !important;
+		left:0px !important;
+	}
+	
+	.ccListView {
+		overflow-x: hidden !important;
+		display: inline !important;
+	}
+	
+	#ccOrdersContent > div > div {
+		position: relative;
+	}
+	
+	

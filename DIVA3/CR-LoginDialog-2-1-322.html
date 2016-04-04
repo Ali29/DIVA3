@@ -1,0 +1,46 @@
+
+<form id='ccLogForm'>
+    <div class='ccStatus' data-bind='html:LogInfo, style:{ color: LogColor }'></div>
+    <ul>
+        <li>
+            <label for="Username" class="required" data-bind='html:txt("USERNAME")'></label>
+            <input type="text" name="Username" class="k-textbox" required data-bind='value:Username, attr:{validationMessage:validationMsg("USERNAME")}'/>
+        </li>
+        <li>
+            <label for="Password" class="required" data-bind='html:txt("PASSWORD")'></label>
+            <input type="Password" name="Password" class="k-textbox" required data-bind='events:{click: onPasswordClick}, value:InputPassword, attr:{validationMessage:validationMsg("PASSWORD")}'/>
+            <a data-bind="visible: ShowForgotPassword" href='#' id='ccForgotPassword'>Kennwort vergessen</a>
+        </li>
+        <li data-bind='visible: ShowContextID'>
+            <label for="ContextID" data-bind='html:txt("CONTEXTID")'></label>
+            <input type="text" name="ContextID" class="k-textbox"  data-bind='value: ContextID'/>
+        </li>
+        <li data-bind='visible: ShowLicenseKey' class='ccLoginLicenceInfo'>
+            <label for="LicenseKey" data-bind='html: txt("LICENSE_CODE")'></label>
+            <span data-bind='html: LicenseKey'></span>&nbsp;&nbsp;<a style='text-decoration:underline; cursor:pointer' data-bind='events: {click: onChangeLicense}, visible: doEnableOnline, html:txt("CHANGE")'></a>
+        </li>
+        <li data-bind='visible: EditLicenseKey'>
+            <label for="LicenseKey" class="required" data-bind='html: txt("LICENSE_CODE")'></label>
+            <input type="text" name="LicenseKey" class="k-textbox" data-bind='value: LicenseKey, attr: { data-ValidateLicence-msg: validationMsg("LICENSE_CODE") }'/>
+        </li>
+        <li  data-bind='visible: EditLicenseKey' class="accept">
+            <label for="Accept" class='required'></label>
+            <input type="checkbox" name="Accept" data-bind='value: AcceptTerms, attr:{data-ValidateLicence-msg: txt("REQUIRED")}' />&nbsp;<span data-bind='html:txt("ACCEPT_TERMS1")'></span> <span style='text-decoration: underline;' data-bind='events: {click:onShowAGB }, html:txt("ACCEPT_TERMS2")'></span>
+        </li>
+        <li class="remember">
+            <label for="rememberme"></label>
+            <input type="checkbox" name="rememberme" data-bind='checked: RememberMe'/>&nbsp;<span data-bind='    html:txt("REMEMBER_LOGINDATA")'></span>
+        </li>
+        <li data-bind='visible: ShowAutologin' >
+            <label for="autologin"></label>
+            <input type="checkbox" name="autologin" data-bind='checked: Autologin'/>&nbsp;<span data-bind='    html:txt("AUTO_LOGIN_ON_START")'></span>
+        </li>
+        <li  class="accept">
+            <label></label>
+            <button class="k-button ccBtnImportant" type="submit"  data-bind='events:{click:onLoginClicked}, html:LoginButtonTitle'>Submit</button>
+            <span class="k-button" data-bind='events: { click: onCancelClicked }, html: txt("CANCEL")'></span>
+        </li>
+        <li class="status">
+        </li>
+    </ul>
+</form>

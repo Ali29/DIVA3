@@ -1,0 +1,92 @@
+<div>
+    <table class='ccDivaNewsPage'>
+        <colgroup>
+	        <col width="25%">
+	        <col width="25%">
+	        <col width="25%">
+	        <col width="25%">
+        </colgroup>
+        <tr>
+            <td class='ccNewsBannerLeft myHeight' colspan='3' rowspan='2'>
+                <div class='ccDivaNewsSlide myHeight' SubModule='DIVA_SLIDE' data-template='NEWS-Slide' detail-template='NEWS-Detail'></div>
+            </td>
+            <td class='ccNewsBannerRightTitle'>
+                <div data-bind='events: { click: OnNewsListClicked }' class='ccDivaNewsHeader' SubModule='PROMOTION_NEWS'>Branchen News ></div>
+            </td>
+        </tr>
+        <tr>
+            <td class='ccNewsBannerRight myNewslistHeight'>
+                <!--span data-bind='visible: DoShowNewsList("SUPPLIER_NEWS"), events: { click: OnNewsListClicked }'-->
+                <div class='ccDivaNewsListTeaser' SubModule='PROMOTION_NEWS' data-template='NEWS-Item' detail-template='NEWS-Detail' id='DivaPromotionNews' Header='Branchen News'></div>
+            </td>
+        </tr>
+        <tr>
+            <td class='ccDivaLogin ccNewsBottom' rowspan='2'>
+				<div class='ccDivaTeaser' SubModule='TEASER' Alias='START' data-template='NEWS-Teaser'></div>
+            </td>
+            <td class='ccDivaRegister ccNewsBottom' rowspan='2'>
+				<div class='ccDivaTeaser' SubModule='TEASER' Alias='REGISTER' data-template='NEWS-Teaser'></div>
+            </td>
+            <td class='ccDivaConsulting ccNewsBottom' rowspan='2'>
+                <div class='ccDivaTeaser' SubModule='TEASER' Alias='SUPPORT' data-template='NEWS-Teaser'></div>
+            </td>
+            <td class='ccNewsBannerRightTitle ccNewsBottom'>
+                <div data-bind='events: { click: OnNewsListClicked }' class='ccDivaNewsHeader' SubModule='DIVA_NEWS'>Produkt News ></div>
+            </td>
+        </tr>
+        <tr>
+            <td class='ccDivaRegister'>
+                <div class='ccDivaNewsListTeaser' SubModule='DIVA_NEWS' data-template='NEWS-Item' detail-template='NEWS-Detail'></div>
+            </td>
+        </tr>
+    </table>
+    <style scoped>
+        @media (min-height:550px) 
+        {
+            .myHeight { height: 220px; }
+            .myNewslistHeight { height: 192px; }
+        }
+        @media (min-height:600px) 
+        {
+            .myHeight { height: 280px; }
+            .myNewslistHeight { height: 262px; }
+        }
+        @media (min-height: 701px) 
+        {
+            .myHeight { height: 380px; }
+            .myNewslistHeight { height: 352px; }
+        }
+        .ccDivaNewsPage {
+            width: 100%;
+            border-spacing: 10px 0px;
+            padding: 8px;
+            font-size: 9pt;
+            height: 100px;
+        }
+        .ccDivaNewsPage td, .ccDivaNewsList td {
+            vertical-align: top;
+        }
+        .ccDivaNewsSlide {
+            overflow: hidden;
+        }
+        .ccNewsBottom {
+            padding-top: 20px;
+            height: 210px;
+        }
+        .ccNewsBannerLeft {
+            /*border: 1px solid #636363;*/
+        }
+        .ccNewsBannerRightTitle {
+            height: 25px;
+        }
+        .ccNewsBannerRight {
+            
+        }
+        
+        .ccDivaLogin, .ccDivaRegister, .ccDivaConsulting {
+            padding-top: 20px 0px 0px 0p;
+        }
+
+    </style>
+
+</div>

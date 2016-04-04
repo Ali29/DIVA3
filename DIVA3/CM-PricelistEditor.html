@@ -1,0 +1,39 @@
+<div class="k-edit-form-container">
+	<div class="k-edit-label"><label>#:txt("PRICELISTNAME")#:</label></div>
+	<div class="k-edit-field"><input data-bind="value:Name" class="k-textbox" style="width: 300px"/></div>
+	
+	<div class="k-edit-label"><label>#:txt("BASED_ON_PRICELIST_TITLE")#:</label></div>
+	<div class="k-edit-field" id="ccBasePriceInfo"></div>
+	
+	<div class="k-edit-label"><label>#:txt("PRICETYPE") + " " + txt("TARGET_CALCULATION")#:</label></div>
+	<div class="k-edit-field" id="ccPricetype"></div>
+	
+	<div class="k-edit-label"><label>#:txt("CURRENCY")#:</label></div>
+	<div class="k-edit-field" id="ccCurrency"></div>
+	
+	<div class="k-edit-label"><label>#:txt("CALC_TITLE")#:</label></div>
+	<div class="k-edit-field">
+		<div class='ccWarning'>#:txt("PL_CALC_INFO")#</div>
+		<div><a id='ccDeleteManualCalcChanges' class='k-button'>#:txt("DELETE_MANUALL_CALC_CHANGES")#</a></div>
+	</div>
+	<div class="k-edit-label">&nbsp;</div>
+	<div class="k-edit-field">
+		<input id='ccShowCalcCorrectionAs1' style='width: 140px'> <span id="ccCalcCorrection1"></span>
+	</div>
+	<div class="k-edit-label">&nbsp;</div>
+	<div class="k-edit-field">
+		<input id='ccShowCalcCorrectionAs2' style='width: 140px'> <span id="ccCalcCorrection2"></span>
+	</div>
+	<div class="k-edit-label">&nbsp;</div>
+	<div class="k-edit-field">
+		<input id='ccShowCalcCorrectionAs3' style='width: 140px'> <span id="ccCalcCorrection3"></span>
+	</div>
+	<div class="k-edit-label"><label>#:txt("DIGITS")#:</label></div>
+	<div class="k-edit-field"><input id='ccDigits'/></div>
+	<div class="k-edit-label"><label>#:txt("ROUNDING")#:</label></div>
+	<div class="k-edit-field"><input id='ccRounding'/></div>
+	<!--div class="k-edit-label"><label>#:txt("EXTENSIONFORMAT")#:</label></div>
+	<div class="k-edit-field"><input id='ccExtensionFormat'/></div-->
+	<div class="k-edit-label"><label>#:txt("VALID_FROM")#:</label></div>
+	<div class="k-edit-field"><input data-bind="value:ValidFrom" class="ccDatepicker"/> #:txt("TO")#:<input data-bind="value:ValidTo" class="ccDatepicker"/></div>
+</div>

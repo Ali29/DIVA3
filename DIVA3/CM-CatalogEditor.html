@@ -1,0 +1,67 @@
+<div class="ccEditContainer">
+	<div>#:txt("SUPPLIER_SPECIFIC_NAMINGS")#</div>
+	<ul>
+		<li><label>#:txt("MODELL_NR")#:</label>#:Codex#</li>
+		<li><label>#:txt("MODELL_NAME")#:</label>#:Name#</li>
+	</ul>
+	<div>#:txt("RETAIL_SPECIFIC_NAMINGS")#</div>
+	<ul>
+		<li><label>#:txt("RETAIL_MODEL_NAME")#:</label><input data-bind="value:RetailModelName" class="k-textbox"/>
+		<span class="ccPlToolIcon ccTbInfo" title="#:txt("RETAIL_MODEL_NAME_INFO")#"></span>
+		</li>
+		<li><label>#:txt("BRAND_NAME")#:</label>
+		<select  id="myBrandnames" data-bind="value:RetailBrandName"></select>
+		<span id="ccAddBrandlogo" class="k-button">#:txt("NEW")#</span>
+		<span id="ccDeleteBrandlogo" class="k-button">#:txt("DELETE")#</span>
+		<span class="ccPlToolIcon ccTbInfo" title="#:txt("BRAND_NAME_INFO")#"></span>
+		</li>
+		<li><label>#:txt("HIDE_SUPPLIER_INFO_ON_SALES")#:</label><input data-bind="checked:HideSupplierInfo" type="checkbox"/>
+		<span class="ccPlToolIcon ccTbInfo" title="#:txt("HIDE_SUPPLIER_INFO_ON_SALES_INFO")#"></span>
+		</li>
+		<!--li><label>#:txt("RETAIL_SUPPLIER_NR")#:</label><input data-bind="value:RetailSupplierNr" class="k-textbox"/></li-->
+		<li><label>#:txt("ASSOCIATION_MODEL_NAME")#:</label><input data-bind="value:AssociationModelName" class="k-textbox"/>
+		<span class="ccPlToolIcon ccTbInfo" title="#:txt("ASSOCIATION_MODEL_NAME_INFO")#"></span>
+		</li>
+		<li><label>#:txt("CAT_ARTICLE_NR")#:</label><input data-bind="value:RetailArticleNr"class="k-textbox"/>
+		<span class="ccPlToolIcon ccTbInfo" title="#:txt("CAT_ARTICLE_NR_INFO")#"></span>
+		</li>
+		<li><label>#:txt("MAIN_CATEGORY")#:</label>
+		<select  id="myMainCategories"></select>
+		<span id="ccAddMainCategory" class="k-button">#:txt("NEW")#</span>
+		<span id="ccDeleteMainCategory" class="k-button">#:txt("DELETE")#</span>
+		<span class="ccPlToolIcon ccTbInfo" title="#:txt("CATEGORYNAME_INFO")+"\n"+txt("CATEGORYNR_INFO")#"></span>
+		</li>
+		<li><label>#:txt("SUB_CATEGORY")#:</label>
+		<select  id="mySubCategories"></select>
+		<span id="ccAddSubCategory" class="k-button">#:txt("NEW")#</span>
+		<span id="ccDeleteSubCategory" class="k-button">#:txt("DELETE")#</span>
+		<span class="ccPlToolIcon ccTbInfo" title="#:txt("CATEGORYNAME_INFO")+"\n"+txt("CATEGORYNR_INFO")#"></span>
+		</li>
+		<li><label>#:txt("POSITION")#:</label><input data-bind="value:Position" class="k-textbox"/>
+		<span class="ccPlToolIcon ccTbInfo" title="#:txt("POSITION_INFO")#"></span>
+		</li>
+		<li><label>#:txt("PRICES_VALID_FROM")#:</label>
+			<input data-role="datepicker" data-bind="value:PricesValidFrom" class="ccDatepicker"/> 
+			#:txt("TO")#:<input data-role="datepicker" data-bind="value:PricesValidTo" class="ccDatepicker"/>
+			<span class="ccPlToolIcon ccTbInfo" title="#:txt("PRICES_VALID_INFO")#"></span>
+		</li>
+	</ul>
+	<div>#:txt("RETAIL_VERSION_SETTINGS")#</div>
+	<ul>
+		<li><label>#:txt("DO_NOT_CREATE_COLORSIM_OFFLINE")#:</label>
+		<input type="checkbox" input data-bind="checked: DoNotCreateColorsimOffline"/>
+		<span class="ccPlToolIcon ccTbInfo" title="#:txt("DO_NOT_CREATE_COLORSIM_OFFLINE_INFO")#"></span>
+		<input data-bind="value:ColorsimInfo" placeholder="#:txt("COLORSIM_OFFLINE_REMARK")#" class="k-textbox"/>
+		</li>
+		<li><label>#:txt("DO_NOT_CREATE_PLANNER_OFFLINE")#:</label>
+		<input input data-bind="checked:DoNotCreatePlannerOffline" type="checkbox"/>
+		<span class="ccPlToolIcon ccTbInfo" title="#:txt("DO_NOT_CREATE_PLANNER_OFFLINE_INFO")#"></span>
+		<input data-bind="value:PlannerInfo" placeholder="#:txt("PLANNER_OFFLINE_REMARK")#" class="k-textbox"/>
+		</li>
+		<li><label>#:txt("DO_NOT_CREATE_PRICES_OFFLINE")#:</label>
+		<input input data-bind="checked:DoNotCreatePricesOffline" type="checkbox"/>
+		<span class="ccPlToolIcon ccTbInfo" title="#:txt("DO_NOT_CREATE_PRICES_OFFLINE_INFO")#"></span>
+		<input data-bind="value:ConfiguratorInfo" placeholder="#:txt("CONFIGURATOR_OFFLINE_REMARK")#" class="k-textbox"/>
+		</li>
+	</ul>
+</div>

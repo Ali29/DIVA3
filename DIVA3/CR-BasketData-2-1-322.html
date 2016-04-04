@@ -1,0 +1,149 @@
+<form id='ccBasketDataForm'>
+    <div class="ccBasketData" data-bind="visible: showClientData">
+		<div class="ccBasketDataTitle" data-bind='html:txt("CLIENT_DATA")'></div>
+        <div class="ccStatus" data-bind='html:ClientDataInfo, style:{ color: ClientDataInfoColor }'></div>
+        <ul>
+            <li>
+                <label for="ClientFirstname" data-bind='html:txt("FIRSTNAME")'></label>
+                <input type="text" style="width:400px;" name="ClientFirstname" class="k-textbox" data-bind='value:ClientFirstname'/>
+            </li>
+            <li>
+                <label for="ClientFirstname" data-bind='html:txt("LASTNAME")'></label>
+                <input type="text" style="width:400px;" name="ClientLastname" class="k-textbox" data-bind='value:ClientLastname'/>
+            </li>
+            <li>
+                <label for="ClientAddress" data-bind='html:txt("STREET_NO")'></label>
+                <input type="text" style="width:340px;" name="ClientAddress" class="k-textbox" data-bind='value:ClientAddress'/>
+                <input type="text" style="width:50px;" name="ClientAddressNr" class="k-textbox" data-bind='value:ClientAddressNr'/>
+            </li>
+            <li>
+                <label for="ClientCAP" data-bind='html:txt("POSTAL_CODE_LOCATION")'></label>
+                <input type="text" style="width:50px;" name="ClientCAP" class="k-textbox" data-bind='value:ClientCAP'/>
+                <input type="text" style="width:340px;" name="ClientCity" class="k-textbox" data-bind='value:ClientCity'/>
+            </li>
+            <li>
+                <label for="ClientCountryCode" data-bind='html:txt("COUNTRY")'></label>
+                <input type="text" style="width:400px;" name="ClientCountryCode" class="k-textbox" data-bind='value:ClientCountryCode'/>
+            </li>
+            <li>
+                <label for="ClientPhone" data-bind='html:txt("TELEPHONE")'></label>
+                <input type="text" style="width:400px;" name="ClientPhone" class="k-textbox" data-bind='value:ClientPhone'/>
+            </li>
+            <li>
+                <label for="ClientPhone" data-bind='html:txt("EMAIL")'></label>
+                <input type="text" style="width:400px;" name="ClientEmail" class="k-textbox" data-bind='value:ClientEmail'/>
+            </li>
+        </ul>
+	</div>
+    <div class="ccBasketData" data-bind="visible: showOrderData">
+	    <div class="ccBasketDataTitle" class='ccTitle' data-bind='html:txt("CHECKOUT")'></div>
+		<ul >
+            <li>
+                <label for="ClientFirstname" data-bind='html:txt("STATE")'></label>
+                <input type="text" style="width:200px;" name="BasketState" 
+				  data-role="dropdownlist"
+				  data-text-field="Title"
+                  data-value-field="Id"
+                  data-bind="value: BasketState, source: StatusArr,  events: { change: onStatusChange}"
+				 />
+            </li>
+            <li data-bind='visible: ShowOrderFields'>
+                <label for="RetailerOrderNum" data-bind='html:txt("FURNITURE_STORE_ORDER_NO")'></label>
+                <input type="text" style="width:300px;" name="RetailerOrderNum" class="k-textbox" data-bind='value:RetailerOrderNum'/>
+            </li>
+            <li data-bind='visible: ShowOrderFields'>
+                <label for="RetailerOfferNum" data-bind='html:txt("FURNITURE_STORE_OFFER_NO")'></label>
+                <input type="text" style="width:300px;" name="RetailerOfferNum" class="k-textbox" data-bind='value:RetailerOfferNum'/>
+            </li>
+            <li data-bind='visible: ShowOrderFields'>
+                <label for="RetailerName" data-bind='html:txt("FURNITURE_STORE")'></label>
+                <input type="text" style="width:300px;" name="RetailerName" class="k-textbox" data-bind='value:RetailerName'/>&nbsp;
+                <span data-bind='html: txt("FURNITURE_STORE_NR")'></span>
+                <input type="text" style="width:300px;" name="RetailerNr" class="k-textbox" data-bind='value:RetailerNr'/>
+            </li>
+            <li data-bind='visible: ShowOrderFields'>
+                <label for="RetailerName" data-bind='html: txt("SELLER")'></label>
+                <input type="text" style="width:300px;" name="Salesperson" class="k-textbox" data-bind='value: Salesperson'/>&nbsp;
+                <span data-bind='html: txt("EMAIL")'></span>
+                <input type="text" style="width:300px;" name="SalespersonEmail" class="k-textbox" data-bind='value: SalespersonEmail'/>&nbsp;
+            </li>
+            <li data-bind='visible: ShowOrderFields'>
+                <label for="ClientRemark" data-bind='html:txt("REMARK")'></label>
+                <textarea cols='80' rows='4' name="ClientRemark" data-bind='value:ClientRemark'/>
+            </li>
+            <li data-bind='visible: ShowSaveSetFields'>
+                <!--SetArticleNr        Artikelnummer , unter der das Set gelistet wird -->
+                <label for="SetArticleNr" data-bind='html: txt("ORDER_NO")'></label>
+                <input type="text" style="width:200px;" name="SetArticleNr" class="k-textbox" data-bind='value: SetArticleNr'/>
+            </li>
+            <li data-bind='visible: ShowSaveSetFields'>
+                <!--SetName        Artikel Kurztext -->
+                <label for="SetName" data-bind='html: txt("SET_NAME")'></label>
+                <input type="text" style="width:200px;" name="SetName" class="k-textbox" data-bind='value: SetName'/>
+            </li>
+            <li data-bind='visible: ShowSaveSetFields'>
+                <!-- SetName     HTML formatierter Werbetext  -->
+                <label for="SetDescription" class='LabelAlignTop' data-bind='html: txt("SET_DESCRIPTION")'></label>
+                <textarea cols='50' rows='4' name="SetName" data-bind='value: SetDescription'/>
+            </li>
+            <li data-bind='visible: ShowSaveSetFields'>
+                <!--SetImages              opt. Liste von Bildern, die dem Artikel zugeordnet werden -->
+                <label for="SetImages" class='LabelAlignTop' data-bind='html: txt("SET_IMAGES")'></label>
+                <!--input type="text" style="width:200px;" name="SetImages" class="k-textbox" data-bind='value: SetImagesInfo'/-->
+                <div style='position:relative; width: 400px; display: inline-block;'>
+    			    <input id="UploadSetImages" type="file" />
+                <!--input type='button' class='k-button ccBtnImportant' data-bind='events: { click: onSetImageAdd }, value: txt("ADD_IMAGE")'/-->&nbsp;
+                </div>
+            </li>
+            <li data-bind='visible: ShowSaveSetFields'>
+                <!-- DiscountPrice       opt. Werbepreis -->
+                <label for="SetPrice" data-bind='html: txt("SET_PRICE")'></label>
+                <span data-bind='html: FormattedSetPrice'/>
+    			<span class="ccPlToolIcon ccTbInfo" data-bind="attr: { title: txt('SET_PRICE_CHANGEINFO') }"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                <span data-bind='html: txt("CALC_SUM")'/>
+                <span data-bind='html: FormattedPlanningPrice'/>
+            </li>
+            <li data-bind='visible: ShowSaveSetFields'>
+                <!-- SetPriceInfo   opt. Preisinfo -->
+                <label for="SetPriceInfo" data-bind='html: txt("SET_PRICE_INFO")'></label>
+                <input type="text" style="width:200px;" name="SetPriceInfo" class="k-textbox" data-bind='value: SetPriceInfo'/>
+            </li>
+            <li data-bind='visible: ShowUseFavoritesAsVariants'>
+                <label>&nbsp</label>
+                <input type='checkbox' data-bind='checked: UseFavoritesAsVariants'/><span data-bind='html: UseFavoritesAsVariantsInfo'></span> &nbsp;&nbsp;&nbsp;
+            </li>
+            <li data-bind='visible: ShowSaveSetFields'>
+                <!-- SetValidFrom, SetValidTo   -->
+                <label data-bind='html: txt("VALID_FROM")'></label>
+                <input data-role="datepicker" data-bind="value: SetValidFrom" class="ccDatepicker"/>
+                <span data-bind='html: txt("TO")'></span>
+                <input data-role="datepicker" data-bind="value: SetValidTo" class="ccDatepicker"/>
+    			<!--span class="ccPlToolIcon ccTbInfo" data-bind="attr: { title: txt('SET_VALID_INFO') }"></!--span-->
+            </li>
+            <li data-bind='visible: ShowOrderFields'>
+                <label for="NewVersion"></label>
+                <input type='checkbox'  name="ShowPrices" data-bind='checked:ShowPrices, events: {click: onShowPricesClicked}'/><span data-bind='html:txt("SHOW_PRICES")'></span> &nbsp;&nbsp;&nbsp;
+                <input type='checkbox'  name="ShowPlanning" data-bind='checked:ShowPlanning, events: {click: onShowPlanningClicked}'/><span data-bind='html:txt("SHOW_PLANNING")'></span> &nbsp;&nbsp;&nbsp;
+                <input type='checkbox'  name="SaveOffline" data-bind='checked:SaveOffline, enabled: isOnline, visible: SaveOfflineVisible'/><span data-bind='html:txt("SAVE_OFFLINE")'></span> &nbsp;&nbsp;&nbsp;
+            </li>
+            <li data-bind="visible: ShowWWSAccount">
+                <label for="SendIWOFurn"></label>
+                <input type='checkbox'  name="SendIWOFurn" data-bind='checked: SendWWS, enabled: isOnline, events: { click: onSendWWSClicked }'/><span data-bind='    html: txt("SEND_TO_WWS")'></span> &nbsp;&nbsp;&nbsp;
+			    <input type='checkbox' name="SendPDF"  data-bind='checked: SendPDF, enabled: isOnline'/><span data-bind='    html: txt("PDF_ATTACHMENT")'></span>
+            </li>
+            <li data-bind="visible: AllowNewVersion">
+                <label for="NewVersion"></label>
+                <input type='checkbox'  name="NewVersion" data-bind='checked:NewVersion, enabled: isNewVersionEnabled'/><span data-bind='html:txt("SAVE_NEW_VERSION")'></span> &nbsp;&nbsp;&nbsp;
+						    <!--input type='checkbox' name="OldCreationDate"  data-bind='checked:OldCreationDate, html:txt("SAVE_NEW_VERSION")'> Datum beibehalten</input-->
+            </li>
+            <li>
+                <label for="Action"></label>
+			    <input type='button' class='k-button ccBtnImportant' data-bind='events: {click: DoSave}, value:txt("SAVE")'/>&nbsp;
+			    <input type='button' class='k-button' data-bind='events: {click: DoPrint}, value: txt("PRINT")'/>&nbsp;
+			    <input type='button' class='k-button' data-bind='events: {click: DoCreatePDF}, value: txt("CREATE_PDF")'>&nbsp;
+			    <input type='button' class='k-button' data-bind='events: {click: DoSendPDFAsEmail}, value: txt("SEND_PDF_AS_MAIL")'/>&nbsp;
+			    <input type='button' class='k-button' data-bind='events: {click: DoCreateNew}, value: txt("CREATE_NEW_ORDER")'/>&nbsp;
+            </li>
+        </ul>
+	</div>
+</form>
