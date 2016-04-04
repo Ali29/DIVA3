@@ -1,0 +1,45 @@
+{
+  "ProjectName": "DIVA3",
+  "ProjectGuid": "87638b7f-eb6a-4f1e-850c-2fb054c94b4a",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.DIVA3",
+  "DisplayName": "DIVA3",
+  "Author": "",
+  "Description": "DIVA3",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "3.7.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "false",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{e77566cb-0d46-490a-9430-1a7f34a819b0}",
+  "WP8ProductID": "{2bcfe55e-cdad-4d53-91d4-9652f12f11b2}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.DIVA3",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}
