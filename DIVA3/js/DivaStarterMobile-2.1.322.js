@@ -196,6 +196,7 @@ myApp = {
 					LoginMode: 'offline',
 					DebugSvgPlanner: 0,
 					ShowDiscountCalculator: "1",
+                    Culture: "it-IT",
 					DebugToServer: 1,
 					DebugToConsole: 0,
 					StartNewsPage: "NEWS-DivaStart",
